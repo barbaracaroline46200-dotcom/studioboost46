@@ -88,23 +88,38 @@ document.querySelectorAll('.filter-btn').forEach(btn => {
   });
 });
 
-/* Formulaire de contact */
+/* Formulaire de contact — Formspree */
 const form = document.querySelector('.contact-form');
-form?.addEventListener('submit', e => {
+form?.addEventListener('submit', async e => {
   e.preventDefault();
   const btn = form.querySelector('.form-submit');
   const success = form.querySelector('.form-success');
   btn.disabled = true;
   btn.textContent = 'Envoi en cours…';
-  setTimeout(() => {
-    btn.style.display = 'none';
-    if (success) { success.style.display = 'block'; }
-    form.reset();
-    setTimeout(() => {
-      btn.style.display = '';
+  try {
+    const response = await fetch('https://formspree.io/f/xojrwbzv', {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    });
+    if (response.ok) {
+      btn.style.display = 'none';
+      if (success) success.style.display = 'block';
+      form.reset();
+      setTimeout(() => {
+        btn.style.display = '';
+        btn.disabled = false;
+        btn.textContent = 'Envoyer mon message →';
+        if (success) success.style.display = 'none';
+      }, 6000);
+    } else {
       btn.disabled = false;
-      btn.textContent = 'Envoyer mon message →';
-      if (success) success.style.display = 'none';
-    }, 5000);
-  }, 1200);
+      btn.textContent = 'Réessayer →';
+      alert('Une erreur est survenue. Merci de réessayer.');
+    }
+  } catch {
+    btn.disabled = false;
+    btn.textContent = 'Réessayer →';
+    alert('Problème de connexion. Merci de réessayer.');
+  }
 });
