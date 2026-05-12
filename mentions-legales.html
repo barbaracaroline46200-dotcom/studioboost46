@@ -8,19 +8,21 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" onload="this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap"></noscript>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter+Tight:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" onload="this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter+Tight:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap"></noscript>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
   <meta name="robots" content="noindex" />
 </head>
 <body>
 
-<!-- ====== NAVIGATION ====== -->
-<nav class="nav" id="nav">
+<div class="cursor" id="cursor"></div>
+
+<!-- NAV -->
+<nav class="nav is-scrolled" id="nav">
   <div class="container nav__inner">
     <a href="index.html" class="nav__logo">
       <img src="images/logo.webp" alt="Studio Boost 46" />
-      <span class="nav__logo-text">Studio Boost <strong>46</strong></span>
+      Studio Boost <strong>46</strong>
     </a>
     <ul class="nav__links">
       <li><a href="index.html">Accueil</a></li>
@@ -28,164 +30,134 @@
       <li><a href="projets.html">Projets</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-    <a href="contact.html" class="btn btn--primary nav__cta">Démarrer mon projet →</a>
-    <button class="nav__burger" aria-label="Ouvrir le menu">
-      <span></span><span></span><span></span>
-    </button>
+    <a href="contact.html" class="nav__cta">Démarrer →</a>
+    <button class="nav__burger" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
   </div>
 </nav>
 <nav class="nav__mobile">
   <a href="index.html">Accueil</a>
-  <a href="services.html">Services & Tarifs</a>
+  <a href="services.html">Services</a>
   <a href="projets.html">Projets</a>
   <a href="contact.html">Contact</a>
   <a href="contact.html" class="btn btn--primary">Démarrer mon projet →</a>
 </nav>
 
-<main>
-
-<!-- ====== PAGE HERO ====== -->
+<!-- PAGE HERO -->
 <section class="page-hero">
   <div class="page-hero__inner">
-    <span class="badge badge--light">Transparence</span>
-    <h1>Mentions <span class="gradient-text">légales</span></h1>
-    <p>Conformément à la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique.</p>
+    <span class="page-hero__tag">Transparence</span>
+    <h1>Mentions<br><em>légales.</em></h1>
+    <p>Conformément à la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique (LCEN).</p>
   </div>
 </section>
 
-<!-- ====== CONTENU ====== -->
-<section class="section">
-  <div class="container" style="max-width: 780px;">
+<!-- CONTENU LÉGAL -->
+<section class="mentions-section">
+  <div class="container">
+    <div class="mentions-content reveal">
 
-    <div class="fade-up" style="display: flex; flex-direction: column; gap: 48px;">
-
-      <!-- 1. Éditeur -->
-      <div>
-        <h2 style="font-size: 1.4rem; margin-bottom: 16px; color: var(--text);">1. Éditeur du site</h2>
-        <p style="margin-bottom: 8px; color: var(--text-muted); line-height: 1.8;">
-          <strong style="color: var(--text);">Nom :</strong> Barbara Benoît<br />
-          <strong style="color: var(--text);">Enseigne :</strong> Studio Boost 46<br />
-          <strong style="color: var(--text);">Forme juridique :</strong> Entreprise Individuelle (EI)<br />
-          <strong style="color: var(--text);">SIRET :</strong> 795 228 428 00020<br />
-          <strong style="color: var(--text);">Adresse :</strong> 77 avenue Jean Jaurès, 46200 Souillac, France<br />
-          <strong style="color: var(--text);">Téléphone :</strong> <a href="tel:+33626550559" style="color: var(--primary);">06 26 55 05 59</a><br />
-          <strong style="color: var(--text);">Email :</strong> <a href="mailto:contact@studioboost46.com" style="color: var(--primary);">contact@studioboost46.com</a><br />
-          <strong style="color: var(--text);">TVA :</strong> Non assujetti à la TVA — Art. 293 B du CGI
+      <div class="mentions-block">
+        <h2>1. Éditeur du site</h2>
+        <p>
+          <strong>Nom :</strong> Barbara Benoît<br />
+          <strong>Enseigne :</strong> Studio Boost 46<br />
+          <strong>Forme juridique :</strong> Entreprise Individuelle (EI)<br />
+          <strong>SIRET :</strong> 795 228 428 00020<br />
+          <strong>Adresse :</strong> 77 avenue Jean Jaurès, 46200 Souillac, France<br />
+          <strong>Téléphone :</strong> <a href="tel:+33626550559">06 26 55 05 59</a><br />
+          <strong>Email :</strong> <a href="mailto:contact@studioboost46.com">contact@studioboost46.com</a><br />
+          <strong>TVA :</strong> Non assujetti à la TVA — Art. 293 B du CGI
         </p>
       </div>
 
-      <!-- 2. Directeur de publication -->
-      <div>
-        <h2 style="font-size: 1.4rem; margin-bottom: 16px; color: var(--text);">2. Directrice de la publication</h2>
-        <p style="color: var(--text-muted); line-height: 1.8;">
-          Barbara Benoît — <a href="mailto:contact@studioboost46.com" style="color: var(--primary);">contact@studioboost46.com</a>
+      <div class="mentions-block">
+        <h2>2. Directrice de la publication</h2>
+        <p>Barbara Benoît — <a href="mailto:contact@studioboost46.com">contact@studioboost46.com</a></p>
+      </div>
+
+      <div class="mentions-block">
+        <h2>3. Hébergeur</h2>
+        <p>
+          <strong>Société :</strong> Hostinger International Ltd.<br />
+          <strong>Adresse :</strong> 61 Lordou Vironos Street, 6023 Larnaca, Chypre<br />
+          <strong>Site :</strong> <a href="https://www.hostinger.fr" target="_blank" rel="noopener">hostinger.fr</a>
         </p>
       </div>
 
-      <!-- 3. Hébergeur -->
-      <div>
-        <h2 style="font-size: 1.4rem; margin-bottom: 16px; color: var(--text);">3. Hébergeur</h2>
-        <p style="color: var(--text-muted); line-height: 1.8;">
-          <strong style="color: var(--text);">Société :</strong> Hostinger International Ltd.<br />
-          <strong style="color: var(--text);">Adresse :</strong> 61 Lordou Vironos Street, 6023 Larnaca, Chypre<br />
-          <strong style="color: var(--text);">Site :</strong> <a href="https://www.hostinger.fr" target="_blank" rel="noopener" style="color: var(--primary);">hostinger.fr</a>
-        </p>
+      <div class="mentions-block">
+        <h2>4. Propriété intellectuelle</h2>
+        <p>L'ensemble du contenu de ce site (textes, images, graphismes, logo, structure) est la propriété exclusive de Barbara Benoît — Studio Boost 46, sauf mention contraire. Toute reproduction, même partielle, est strictement interdite sans autorisation préalable écrite.</p>
       </div>
 
-      <!-- 4. Propriété intellectuelle -->
-      <div>
-        <h2 style="font-size: 1.4rem; margin-bottom: 16px; color: var(--text);">4. Propriété intellectuelle</h2>
-        <p style="color: var(--text-muted); line-height: 1.8;">
-          L'ensemble du contenu de ce site (textes, images, graphismes, logo, structure) est la propriété exclusive de Barbara Benoît — Studio Boost 46, sauf mention contraire. Toute reproduction, même partielle, est strictement interdite sans autorisation préalable écrite.
-        </p>
+      <div class="mentions-block">
+        <h2>5. Données personnelles (RGPD)</h2>
+        <p><strong>Responsable du traitement :</strong> Barbara Benoît — Studio Boost 46</p>
+        <p><strong>Données collectées :</strong> via le formulaire de contact, les informations suivantes peuvent être collectées : prénom, nom, adresse email, numéro de téléphone, activité professionnelle et message. Ces données sont utilisées exclusivement pour répondre à votre demande.</p>
+        <p><strong>Durée de conservation :</strong> les données sont conservées pendant 3 ans maximum à compter du dernier contact.</p>
+        <p><strong>Sous-traitant :</strong> le formulaire de contact utilise le service <a href="https://formspree.io" target="_blank" rel="noopener">Formspree</a> pour l'acheminement des messages.</p>
+        <p><strong>Vos droits :</strong> conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez d'un droit d'accès, de rectification, d'effacement et d'opposition sur vos données. Pour exercer ces droits, contactez : <a href="mailto:contact@studioboost46.com">contact@studioboost46.com</a></p>
       </div>
 
-      <!-- 5. Données personnelles -->
-      <div>
-        <h2 style="font-size: 1.4rem; margin-bottom: 16px; color: var(--text);">5. Données personnelles (RGPD)</h2>
-        <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 12px;">
-          <strong style="color: var(--text);">Responsable du traitement :</strong> Barbara Benoît — Studio Boost 46
-        </p>
-        <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 12px;">
-          <strong style="color: var(--text);">Données collectées :</strong> via le formulaire de contact, les informations suivantes peuvent être collectées : prénom, nom, adresse email, numéro de téléphone, activité professionnelle et message. Ces données sont utilisées exclusivement pour répondre à votre demande.
-        </p>
-        <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 12px;">
-          <strong style="color: var(--text);">Durée de conservation :</strong> les données sont conservées pendant 3 ans maximum à compter du dernier contact.
-        </p>
-        <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 12px;">
-          <strong style="color: var(--text);">Sous-traitant :</strong> le formulaire de contact utilise le service <a href="https://formspree.io" target="_blank" rel="noopener" style="color: var(--primary);">Formspree</a> pour l'acheminement des messages.
-        </p>
-        <p style="color: var(--text-muted); line-height: 1.8;">
-          <strong style="color: var(--text);">Vos droits :</strong> conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez d'un droit d'accès, de rectification, d'effacement et d'opposition sur vos données. Pour exercer ces droits, contactez : <a href="mailto:contact@studioboost46.com" style="color: var(--primary);">contact@studioboost46.com</a>
-        </p>
+      <div class="mentions-block">
+        <h2>6. Cookies</h2>
+        <p>Ce site n'utilise pas de cookies de traçage, de mesure d'audience ou de publicité. Aucune donnée de navigation n'est collectée à des fins analytiques.</p>
       </div>
 
-      <!-- 6. Cookies -->
-      <div>
-        <h2 style="font-size: 1.4rem; margin-bottom: 16px; color: var(--text);">6. Cookies</h2>
-        <p style="color: var(--text-muted); line-height: 1.8;">
-          Ce site n'utilise pas de cookies de traçage, de mesure d'audience ou de publicité. Aucune donnée de navigation n'est collectée à des fins analytiques.
-        </p>
-      </div>
-
-      <!-- 7. Liens externes -->
-      <div>
-        <h2 style="font-size: 1.4rem; margin-bottom: 16px; color: var(--text);">7. Liens hypertextes</h2>
-        <p style="color: var(--text-muted); line-height: 1.8;">
-          Ce site peut contenir des liens vers des sites tiers. Studio Boost 46 n'est pas responsable du contenu de ces sites ni de leur politique de confidentialité.
-        </p>
+      <div class="mentions-block">
+        <h2>7. Liens hypertextes</h2>
+        <p>Ce site peut contenir des liens vers des sites tiers. Studio Boost 46 n'est pas responsable du contenu de ces sites ni de leur politique de confidentialité.</p>
       </div>
 
     </div>
   </div>
 </section>
 
-<!-- ====== FOOTER ====== -->
+<!-- FOOTER -->
 <footer class="footer">
   <div class="container">
     <div class="footer__grid">
       <div class="footer__brand">
-        <div class="footer__logo">
-          <img src="images/logo.webp" alt="Studio Boost 46" />
-          <span class="footer__logo-text">Studio Boost <strong>46</strong></span>
-        </div>
-        <p class="footer__tagline">
-          Sites web simples, efficaces et sans blabla.<br/>
-          Pour les artisans, commerçants et entrepreneurs<br/>
-          du Lot (46) et alentours.
-        </p>
+        <div class="logo"><img src="images/logo.webp" alt="">Studio Boost <strong>46</strong></div>
+        <p>Sites web simples, efficaces et sans blabla. Pour les artisans, commerçants et entrepreneurs du Lot (46) et alentours.</p>
         <div class="footer__social">
           <a href="https://www.facebook.com/share/1CuA4sLjBP/?mibextid=wwXIfr" aria-label="Facebook" target="_blank" rel="noopener">f</a>
         </div>
       </div>
       <div class="footer__col">
-        <h3>Navigation</h3>
+        <h5>Navigation</h5>
         <ul>
           <li><a href="index.html">Accueil</a></li>
-          <li><a href="services.html">Services & Tarifs</a></li>
+          <li><a href="services.html">Services &amp; Tarifs</a></li>
           <li><a href="projets.html">Projets</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
       <div class="footer__col">
-        <h3>Infos pratiques</h3>
+        <h5>Contact</h5>
         <ul>
-          <li>📍 Souillac (46200), Lot</li>
-          <li>⚡ Livraison en 72H</li>
-          <li>🕐 Réponse en 24H</li>
-          <li>💶 À partir de 290€</li>
+          <li>Souillac (46200), Lot</li>
+          <li>Réponse en 24H</li>
+          <li>Livraison en 72H</li>
+          <li><a href="contact.html">→ Envoyer un message</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h5>Légal</h5>
+        <ul>
+          <li><a href="mentions-legales.html">Mentions légales</a></li>
+          <li><a href="mentions-legales.html">RGPD</a></li>
         </ul>
       </div>
     </div>
+    <div class="footer__giant">Studio Boost <em>46.</em></div>
     <div class="footer__bottom">
-      <span>© 2026 Studio Boost 46 — Tous droits réservés</span>
-      <span><a href="mentions-legales.html" style="color: inherit; text-decoration: underline;">Mentions légales</a></span>
-      <span>Souillac (46200), Lot · France</span>
+      <span>© 2026 Studio Boost 46</span>
+      <span>Souillac (46200) · Lot · France</span>
+      <span><a href="mentions-legales.html">Mentions légales</a></span>
     </div>
   </div>
 </footer>
 
-</main>
 <script src="script.js"></script>
 </body>
 </html>

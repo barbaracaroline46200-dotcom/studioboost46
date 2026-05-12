@@ -8,17 +8,20 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" onload="this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap"></noscript>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter+Tight:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" onload="this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter+Tight:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap"></noscript>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
 </head>
 <body>
 
-<!-- ====== NAVIGATION ====== -->
-<nav class="nav" id="nav">
+<div class="cursor" id="cursor"></div>
+
+<!-- NAV -->
+<nav class="nav is-scrolled" id="nav">
   <div class="container nav__inner">
     <a href="index.html" class="nav__logo">
       <img src="images/logo.webp" alt="Studio Boost 46" />
-      <span class="nav__logo-text">Studio Boost <strong>46</strong></span>
+      Studio Boost <strong>46</strong>
     </a>
     <ul class="nav__links">
       <li><a href="index.html">Accueil</a></li>
@@ -26,176 +29,143 @@
       <li><a href="projets.html">Projets</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-    <a href="contact.html" class="btn btn--primary nav__cta">Démarrer mon projet →</a>
-    <button class="nav__burger" aria-label="Ouvrir le menu">
-      <span></span><span></span><span></span>
-    </button>
+    <a href="contact.html" class="nav__cta">Démarrer →</a>
+    <button class="nav__burger" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
   </div>
 </nav>
 <nav class="nav__mobile">
   <a href="index.html">Accueil</a>
-  <a href="services.html">Services & Tarifs</a>
+  <a href="services.html" class="active">Services</a>
   <a href="projets.html">Projets</a>
   <a href="contact.html">Contact</a>
   <a href="contact.html" class="btn btn--primary">Démarrer mon projet →</a>
 </nav>
 
-<main>
-<!-- ====== PAGE HERO ====== -->
+<!-- PAGE HERO -->
 <section class="page-hero">
   <div class="page-hero__inner">
-    <span class="badge badge--light">Formules & Tarifs</span>
-    <h1>Des offres <span class="gradient-text">claires</span><br/>sans mauvaise surprise</h1>
-    <p>Trois formules pour tous les profils. Prix affichés, livraison en 72H, paiement sécurisé.</p>
+    <span class="page-hero__tag">Formules &amp; Tarifs</span>
+    <h1>Des offres <em>claires,</em><br>sans mauvaise surprise.</h1>
+    <p>Trois formules pour tous les profils. Prix affichés, livraison en 72H, paiement transparent.</p>
   </div>
 </section>
 
-<!-- ====== TARIFS ====== -->
-<section class="section">
+<!-- TARIFS -->
+<section class="section section--cream">
   <div class="container">
-    <div class="section__header fade-up">
-      <span class="badge">3 Formules au choix</span>
-      <h2>Choisissez la formule <span class="gradient-text">qui vous correspond</span></h2>
-      <p>Toutes les formules incluent un site responsive, un SEO de base et la livraison en 72H après réception de vos éléments.</p>
+    <div class="section__header reveal">
+      <div class="section__eyebrow">01 — Les formules</div>
+      <h2 class="section__title">Choisissez ce qui<br>vous <em>correspond.</em></h2>
     </div>
-
-    <div class="pricing-grid">
-
-      <!-- ESSENTIEL -->
-      <div class="pricing-card fade-up delay-1">
-        <div class="pc-icon">🏠</div>
-        <div class="pc-name">Formule Essentiel</div>
-        <div class="pc-desc">L'essentiel pour exister en ligne et être trouvable immédiatement par vos clients locaux.</div>
-        <div class="pc-price">
-          <strong>290</strong><span>€</span>
-        </div>
-        <div class="pc-delivery">⚡ Livraison garantie en 72H</div>
-        <ul class="pc-features">
-          <li class="pc-feature"><span class="pc-check">✓</span> 1 page complète et soignée</li>
-          <li class="pc-feature"><span class="pc-check">✓</span> Vos coordonnées &amp; horaires</li>
-          <li class="pc-feature"><span class="pc-check">✓</span> Google Maps intégrée</li>
-          <li class="pc-feature"><span class="pc-check">✓</span> Site adapté mobile (responsive)</li>
-          <li class="pc-feature"><span class="pc-check">✓</span> SEO de base (Google)</li>
-          <li class="pc-feature"><span class="pc-check">✓</span> Design moderne aux couleurs de votre activité</li>
+    <div class="pricing reveal reveal-d2">
+      <div class="pcard">
+        <div class="pcard__name">Essentiel</div>
+        <p class="pcard__desc">L'essentiel pour exister en ligne et être trouvable immédiatement par vos clients locaux.</p>
+        <div class="pcard__price"><strong>290</strong><small>€</small><span class="from">TVA non applicable</span></div>
+        <ul class="pcard__features">
+          <li>1 page complète &amp; soignée</li>
+          <li>Vos coordonnées &amp; horaires</li>
+          <li>Google Maps intégrée</li>
+          <li>Site adapté mobile</li>
+          <li>SEO de base (Google)</li>
+          <li>Design aux couleurs de votre activité</li>
         </ul>
-        <a href="contact.html" class="btn btn--outline">Choisir l'Essentiel</a>
+        <a href="contact.html" class="pcard__cta">Choisir l'Essentiel →</a>
       </div>
-
-      <!-- PRO -->
-      <div class="pricing-card pricing-card--star fade-up delay-2">
-        <div class="pricing-card__top-badge">⭐ Le plus populaire</div>
-        <div class="pc-icon">🚀</div>
-        <div class="pc-name">Formule Pro</div>
-        <div class="pc-desc">Une présence professionnelle complète pour convaincre et décrocher de nouveaux clients.</div>
-        <div class="pc-price">
-          <strong>590</strong><span>€</span>
-        </div>
-        <div class="pc-delivery">⚡ Livraison garantie en 72H</div>
-        <ul class="pc-features">
-          <li class="pc-feature"><span class="pc-check">✓</span> 4 à 5 pages complètes</li>
-          <li class="pc-feature"><span class="pc-check">✓</span> Galerie photos de vos réalisations</li>
-          <li class="pc-feature"><span class="pc-check">✓</span> Formulaire de contact</li>
-          <li class="pc-feature"><span class="pc-check">✓</span> Google Maps intégrée</li>
-          <li class="pc-feature"><span class="pc-check">✓</span> SEO de base optimisé</li>
-          <li class="pc-feature"><span class="pc-check">✓</span> Site adapté mobile</li>
+      <div class="pcard pcard--star">
+        <div class="pcard__badge">Best-seller</div>
+        <div class="pcard__name">Pro</div>
+        <p class="pcard__desc">Une présence professionnelle complète pour convaincre et décrocher de nouveaux clients.</p>
+        <div class="pcard__price"><strong>590</strong><small>€</small><span class="from">TVA non applicable</span></div>
+        <ul class="pcard__features">
+          <li>4 à 5 pages complètes</li>
+          <li>Galerie photos de vos réalisations</li>
+          <li>Formulaire de contact</li>
+          <li>Google Maps intégrée</li>
+          <li>SEO de base optimisé</li>
+          <li>Livré en 72H chrono</li>
         </ul>
-        <a href="contact.html" class="btn btn--primary">Choisir le Pro</a>
+        <a href="contact.html" class="pcard__cta">Choisir le Pro →</a>
       </div>
-
-      <!-- PRO+ -->
-      <div class="pricing-card fade-up delay-3">
-        <div class="pc-icon">💎</div>
-        <div class="pc-name">Formule Pro+</div>
-        <div class="pc-desc">Pour aller encore plus loin : ajoutez un blog ou une boutique en ligne simple à votre site Pro.</div>
-        <div class="pc-price">
-          <strong>890</strong><span>€</span>
-        </div>
-        <div class="pc-delivery">⚡ Livraison garantie en 72H</div>
-        <ul class="pc-features">
-          <li class="pc-feature"><span class="pc-check">✓</span> Tout le contenu de la formule Pro</li>
-          <li class="pc-feature"><span class="pc-check">✓</span> Blog intégré <em>ou</em> boutique simple</li>
-          <li class="pc-feature"><span class="pc-check">✓</span> Paiement possible en 3 fois</li>
-          <li class="pc-feature"><span class="pc-check">✓</span> Accompagnement renforcé</li>
-          <li class="pc-feature"><span class="pc-check">✓</span> Formation à la prise en main</li>
+      <div class="pcard">
+        <div class="pcard__name">Pro+</div>
+        <p class="pcard__desc">Pour aller encore plus loin : ajoutez un blog ou une boutique en ligne simple à votre site Pro.</p>
+        <div class="pcard__price"><strong>890</strong><small>€</small><span class="from">3× sans frais possible</span></div>
+        <ul class="pcard__features">
+          <li>Tout le contenu de la formule Pro</li>
+          <li>Blog intégré ou boutique simple</li>
+          <li>Paiement possible en 3 fois</li>
+          <li>Accompagnement renforcé</li>
+          <li>Formation à la prise en main</li>
         </ul>
-        <a href="contact.html" class="btn btn--outline">Choisir le Pro+</a>
+        <a href="contact.html" class="pcard__cta">Choisir le Pro+ →</a>
       </div>
-
     </div>
+    <p class="pricing__foot">Toutes les formules incluent un site responsive, un SEO de base et la livraison en 72H après réception de vos éléments.</p>
   </div>
 </section>
 
-<!-- ====== MAINTENANCE ====== -->
-<section class="maintenance-section">
+<!-- MAINTENANCE -->
+<section class="section maintenance-section" id="maintenance">
   <div class="container">
-    <div class="section__header fade-up" style="margin-bottom:40px;">
-      <span class="badge">Le vrai lâcher-prise</span>
-      <h2>Maintenance <span class="gradient-text">30€/mois</span></h2>
-      <p>Le service pour ceux qui ont compris que leur temps vaut plus que ça.</p>
+    <div class="section__header reveal">
+      <div class="section__eyebrow">02 — Le lâcher-prise</div>
+      <h2 class="section__title">Maintenance<br><em>29€/mois.</em></h2>
     </div>
-    <div class="maintenance-box fade-up">
+    <div class="maintenance-box reveal reveal-d2">
       <div>
-        <h3>Vous parlez, je m'en occupe. Google revient, vos clients aussi.</h3>
-        <p style="margin-bottom:16px;">
-          Chaque mois, vous me dites quoi mettre en avant — une promo, une nouvelle prestation,
-          un événement, une actu. Je mets à jour. Discrètement. Efficacement.
-          Pendant ce temps, Google voit un site vivant et le remonte dans les résultats.
-          Vos concurrents avec leur site figé depuis 2019 ? Ils peuvent pas savoir.
-        </p>
-        <p style="margin-bottom:24px; color: var(--text-muted);">
-          Et si vous n'avez rien à changer ce mois-ci ? Je surveille quand même. Les mises à jour de sécurité,
-          elles, ne prennent pas de vacances.
-        </p>
+        <h3>Vous parlez, je m'en occupe.<br>Google revient, vos clients aussi.</h3>
+        <p>Chaque mois, vous me dites quoi mettre en avant — une promo, une nouvelle prestation, un événement, une actu. Je mets à jour. Discrètement. Efficacement. Pendant ce temps, Google voit un site vivant et le remonte dans les résultats.</p>
+        <p>Et si vous n'avez rien à changer ce mois-ci ? Je surveille quand même. Les mises à jour de sécurité, elles, ne prennent pas de vacances.</p>
         <div class="maintenance-feats">
-          <div class="maintenance-feat">✓ Hébergement professionnel géré</div>
-          <div class="maintenance-feat">✓ Mises à jour de sécurité chaque mois</div>
-          <div class="maintenance-feat">✓ Modifications mensuelles incluses (textes, photos, promos…)</div>
-          <div class="maintenance-feat">✓ Site toujours frais = Google content = vous content</div>
-          <div class="maintenance-feat">✓ Support prioritaire — je réponds vite</div>
-          <div class="maintenance-feat">✓ Sans engagement de durée</div>
+          <div class="maintenance-feat">Hébergement professionnel géré</div>
+          <div class="maintenance-feat">Mises à jour de sécurité chaque mois</div>
+          <div class="maintenance-feat">Modifications mensuelles incluses</div>
+          <div class="maintenance-feat">Site vivant = Google content</div>
+          <div class="maintenance-feat">Support prioritaire — réponse rapide</div>
+          <div class="maintenance-feat">Sans engagement de durée</div>
         </div>
       </div>
       <div class="maintenance-price-block">
-        <div class="price">30€</div>
+        <div class="price">29€</div>
         <div class="per">/ mois</div>
-        <small>Sans engagement · Sur toutes<br/>les formules</small>
-        <a href="contact.html" class="btn btn--white" style="margin-top:20px; font-size:.85rem; padding:12px 22px;">Je veux ce calme absolu →</a>
+        <small>Sans engagement<br>Sur toutes les formules</small>
+        <a href="contact.html" class="btn btn--primary">Je veux ce calme absolu →</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ====== PAIEMENT ====== -->
-<section class="payment-section">
+<!-- PAIEMENT -->
+<section class="section payment-section">
   <div class="container">
-    <div class="section__header fade-up" style="margin-bottom:40px;">
-      <span class="badge">Paiement sécurisé</span>
-      <h2>Comment ça se passe <span class="gradient-text">côté paiement ?</span></h2>
-      <p>Simple, sécurisé et transparent. Vous savez toujours où vous en êtes.</p>
+    <div class="section__header reveal">
+      <div class="section__eyebrow" style="color:var(--muted)">03 — Paiement</div>
+      <h2 class="section__title" style="color:var(--cream)">Côté paiement,<br><em>c'est simple.</em></h2>
     </div>
     <div class="payment-grid">
-      <div class="payment-card fade-up delay-1">
+      <div class="payment-card reveal">
         <div class="payment-icon">🔐</div>
         <div>
           <h4>50% à la commande</h4>
           <p>Un acompte de 50% est demandé au démarrage pour réserver votre créneau et lancer le projet. C'est ainsi que le travail commence.</p>
         </div>
       </div>
-      <div class="payment-card fade-up delay-2">
+      <div class="payment-card reveal reveal-d2">
         <div class="payment-icon">✅</div>
         <div>
           <h4>50% à la livraison</h4>
           <p>Le solde est réglé à la livraison de votre site, une fois que vous êtes satisfait(e) du résultat. Pas de risque pour vous.</p>
         </div>
       </div>
-      <div class="payment-card fade-up delay-3">
+      <div class="payment-card reveal reveal-d3">
         <div class="payment-icon">📅</div>
         <div>
           <h4>Paiement en 3× (Pro+ uniquement)</h4>
-          <p>Pour la formule Pro+ à 890€, la possibilité de payer en 3 fois est disponible : 30% au démarrage, 35% à mi-parcours, 35% à la livraison.</p>
+          <p>Pour la formule Pro+ à 890€, la possibilité de payer en 3 fois est disponible. 30% au démarrage, 35% à mi-parcours, 35% à la livraison.</p>
         </div>
       </div>
-      <div class="payment-card fade-up delay-4">
+      <div class="payment-card reveal reveal-d4">
         <div class="payment-icon">🤝</div>
         <div>
           <h4>Devis gratuit &amp; sans engagement</h4>
@@ -206,149 +176,113 @@
   </div>
 </section>
 
-<!-- ====== FAQ ====== -->
-<section class="faq-section section--alt section">
+<!-- FAQ -->
+<section class="section faq-section">
   <div class="container">
-    <div class="section__header fade-up">
-      <span class="badge">Questions fréquentes</span>
-      <h2>Toutes vos <span class="gradient-text">questions</span></h2>
-      <p>Si vous ne trouvez pas votre réponse ici, n'hésitez pas à me contacter directement.</p>
+    <div class="section__header reveal">
+      <div class="section__eyebrow">04 — FAQ</div>
+      <h2 class="section__title">Toutes vos<br><em>questions.</em></h2>
     </div>
-    <div class="faq__list fade-up">
+    <div class="faq__list reveal reveal-d2">
 
       <div class="faq__item">
-        <div class="faq__q">
-          Pourquoi 72H et pas plus tôt ?
-          <span class="faq__icon">+</span>
-        </div>
-        <div class="faq__a">
-          Le délai de 72H commence à partir du moment où j'ai reçu <strong>tous vos éléments</strong> : textes, photos, logo et informations pratiques. Ce délai me permet de travailler de façon concentrée pour vous rendre un site de qualité. En pratique, beaucoup de clients reçoivent leur site encore plus vite !
-        </div>
+        <div class="faq__q">Pourquoi 72H et pas plus tôt ?<span class="faq__icon">+</span></div>
+        <div class="faq__a">Le délai de 72H commence à partir du moment où j'ai reçu <strong>tous vos éléments</strong> : textes, photos, logo et informations pratiques. Ce délai me permet de travailler de façon concentrée pour vous rendre un site de qualité. En pratique, beaucoup de clients reçoivent leur site encore plus vite !</div>
       </div>
 
       <div class="faq__item">
-        <div class="faq__q">
-          Je n'ai pas de photos professionnelles. C'est un problème ?
-          <span class="faq__icon">+</span>
-        </div>
-        <div class="faq__a">
-          Pas du tout ! Des photos prises avec un smartphone récent font très bien l'affaire. Je peux aussi utiliser des photos libres de droits adaptées à votre activité. Si vous êtes à moins de 30 km de Souillac, je peux même vous proposer une séance photo simple pour compléter vos visuels.
-        </div>
+        <div class="faq__q">Je n'ai pas de photos professionnelles. C'est un problème ?<span class="faq__icon">+</span></div>
+        <div class="faq__a">Pas du tout ! Des photos prises avec un smartphone récent font très bien l'affaire. Je peux aussi utiliser des photos libres de droits adaptées à votre activité. Si vous êtes à moins de 30 km de Souillac, je peux même vous proposer une séance photo simple pour compléter vos visuels.</div>
       </div>
 
       <div class="faq__item">
-        <div class="faq__q">
-          Est-ce que je pourrai modifier mon site moi-même après livraison ?
-          <span class="faq__icon">+</span>
-        </div>
-        <div class="faq__a">
-          Oui ! Je vous livre un site avec une interface simple pour modifier vos textes, prix ou photos vous-même. Je vous forme à la prise en main lors de la livraison. Et si vous préférez déléguer, l'option Maintenance à 29€/mois est là pour ça.
-        </div>
+        <div class="faq__q">Est-ce que je pourrai modifier mon site moi-même après livraison ?<span class="faq__icon">+</span></div>
+        <div class="faq__a">Oui ! Je vous livre un site avec une interface simple pour modifier vos textes, prix ou photos vous-même. Je vous forme à la prise en main lors de la livraison. Et si vous préférez déléguer, l'option Maintenance à 29€/mois est là pour ça.</div>
       </div>
 
       <div class="faq__item">
-        <div class="faq__q">
-          Le site sera-t-il visible sur Google ?
-          <span class="faq__icon">+</span>
-        </div>
-        <div class="faq__a">
-          Oui, toutes mes formules incluent un SEO de base : balises titre, descriptions, structure correcte et soumission à Google Search Console. Votre site sera indexé par Google dans les jours suivant sa mise en ligne. Pour un référencement avancé et plus ciblé, une option SEO est disponible sur demande.
-        </div>
+        <div class="faq__q">Le site sera-t-il visible sur Google ?<span class="faq__icon">+</span></div>
+        <div class="faq__a">Oui, toutes mes formules incluent un SEO de base : balises titre, descriptions, structure correcte et soumission à Google Search Console. Votre site sera indexé par Google dans les jours suivant sa mise en ligne. Pour un référencement avancé et plus ciblé, une option SEO est disponible sur demande.</div>
       </div>
 
       <div class="faq__item">
-        <div class="faq__q">
-          Que se passe-t-il si je ne suis pas satisfait(e) du résultat ?
-          <span class="faq__icon">+</span>
-        </div>
-        <div class="faq__a">
-          Votre satisfaction est ma priorité. Si le rendu ne vous convient pas, je fais les ajustements nécessaires jusqu'à ce que vous soyez pleinement satisfait(e). C'est pour ça que le solde de 50% est demandé uniquement à la livraison : vous payez quand vous êtes content(e).
-        </div>
+        <div class="faq__q">Que se passe-t-il si je ne suis pas satisfait(e) du résultat ?<span class="faq__icon">+</span></div>
+        <div class="faq__a">Votre satisfaction est ma priorité. Si le rendu ne vous convient pas, je fais les ajustements nécessaires jusqu'à ce que vous soyez pleinement satisfait(e). C'est pour ça que le solde de 50% est demandé uniquement à la livraison : vous payez quand vous êtes content(e).</div>
       </div>
 
       <div class="faq__item">
-        <div class="faq__q">
-          Est-ce que vous travaillez uniquement dans le Lot (46) ?
-          <span class="faq__icon">+</span>
-        </div>
-        <div class="faq__a">
-          Non ! Si ma communication est centrée sur le Lot et ses alentours (19, 15, 24, 46, 47…), je travaille partout en France. Le tout se fait à distance, par échange de messages, appels vidéo et envoi de fichiers. Aucun problème pour collaborer depuis l'autre bout de la France !
-        </div>
+        <div class="faq__q">Est-ce que vous travaillez uniquement dans le Lot (46) ?<span class="faq__icon">+</span></div>
+        <div class="faq__a">Non ! Si ma communication est centrée sur le Lot et ses alentours (19, 15, 24, 46, 47…), je travaille partout en France. Le tout se fait à distance, par échange de messages, appels vidéo et envoi de fichiers. Aucun problème pour collaborer depuis l'autre bout de la France !</div>
       </div>
 
       <div class="faq__item">
-        <div class="faq__q">
-          Combien coûte l'hébergement de mon site chaque année ?
-          <span class="faq__icon">+</span>
-        </div>
-        <div class="faq__a">
-          Si vous optez pour l'option Maintenance à 29€/mois, l'hébergement est inclus. Sans cette option, je vous guide pour choisir un hébergeur adapté, ce qui représente généralement entre 5€ et 15€ par mois selon votre formule. Je reste disponible pour vous accompagner dans cette démarche.
-        </div>
+        <div class="faq__q">Combien coûte l'hébergement de mon site chaque année ?<span class="faq__icon">+</span></div>
+        <div class="faq__a">Si vous optez pour l'option Maintenance à 29€/mois, l'hébergement est inclus. Sans cette option, je vous guide pour choisir un hébergeur adapté, ce qui représente généralement entre 5€ et 15€ par mois selon votre formule. Je reste disponible pour vous accompagner dans cette démarche.</div>
       </div>
 
     </div>
   </div>
 </section>
 
-<!-- ====== CTA ====== -->
+<!-- CTA -->
 <section class="cta-banner">
+  <div class="cta-banner__bgtext">GO</div>
   <div class="container cta-banner__inner">
-    <span class="badge badge--light" style="margin-bottom:20px;">Prêt(e) à vous lancer ?</span>
-    <h2>Votre projet mérite<br/>un site à sa hauteur.</h2>
-    <p>Un échange gratuit de 20 minutes suffit pour savoir quelle formule vous convient. Sans engagement.</p>
-    <div class="cta-banner__actions">
-      <a href="contact.html" class="btn btn--white btn--lg">Demander un devis gratuit →</a>
-      <a href="projets.html" class="btn btn--ghost btn--lg">Voir les réalisations</a>
+    <span class="cta-banner__tag reveal">Prêt(e) à vous lancer ?</span>
+    <h2 class="reveal reveal-d2">Votre projet mérite<br>un site à <em>sa hauteur.</em></h2>
+    <div class="cta-banner__actions reveal reveal-d3">
+      <a href="contact.html" class="btn btn--ink btn--lg">Demander un devis gratuit →</a>
+      <a href="projets.html" class="btn btn--ghost-ink btn--lg">Voir les réalisations</a>
     </div>
   </div>
 </section>
 
-<!-- ====== FOOTER ====== -->
+<!-- FOOTER -->
 <footer class="footer">
   <div class="container">
     <div class="footer__grid">
       <div class="footer__brand">
-        <div class="footer__logo">
-          <img src="images/logo.webp" alt="Studio Boost 46" />
-          <span class="footer__logo-text">Studio Boost <strong>46</strong></span>
-        </div>
-        <p class="footer__tagline">
-          Sites web simples, efficaces et sans blabla.<br/>
-          Pour les artisans, commerçants et entrepreneurs<br/>
-          du Lot (46) et alentours.
-        </p>
+        <div class="logo"><img src="images/logo.webp" alt="">Studio Boost <strong>46</strong></div>
+        <p>Sites web simples, efficaces et sans blabla. Pour les artisans, commerçants et entrepreneurs du Lot (46) et alentours.</p>
         <div class="footer__social">
           <a href="https://www.facebook.com/share/1CuA4sLjBP/?mibextid=wwXIfr" aria-label="Facebook" target="_blank" rel="noopener">f</a>
         </div>
       </div>
       <div class="footer__col">
-        <h3>Navigation</h3>
+        <h5>Navigation</h5>
         <ul>
           <li><a href="index.html">Accueil</a></li>
-          <li><a href="services.html">Services & Tarifs</a></li>
+          <li><a href="services.html">Services &amp; Tarifs</a></li>
           <li><a href="projets.html">Projets</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
       <div class="footer__col">
-        <h3>Contact</h3>
+        <h5>Contact</h5>
         <ul>
-          <li>📍 Souillac (46200), Lot</li>
-          <li>⚡ Livraison en 72H</li>
-          <li>🕐 Réponse en 24H</li>
+          <li>Souillac (46200), Lot</li>
+          <li>Réponse en 24H</li>
+          <li>Livraison en 72H</li>
           <li><a href="contact.html">→ Envoyer un message</a></li>
         </ul>
       </div>
+      <div class="footer__col">
+        <h5>Légal</h5>
+        <ul>
+          <li><a href="mentions-legales.html">Mentions légales</a></li>
+          <li><a href="mentions-legales.html">RGPD</a></li>
+        </ul>
+      </div>
     </div>
+    <div class="footer__giant">Studio Boost <em>46.</em></div>
     <div class="footer__bottom">
-      <span>© 2026 Studio Boost 46 — Tous droits réservés</span>
-      <span><a href="mentions-legales.html" style="color: inherit; text-decoration: underline;">Mentions légales</a></span>
-      <span>Souillac (46200), Lot · France</span>
+      <span>© 2026 Studio Boost 46</span>
+      <span>Souillac (46200) · Lot · France</span>
+      <span><a href="mentions-legales.html">Mentions légales</a></span>
     </div>
   </div>
 </footer>
 
-</main>
 <script src="script.js"></script>
 </body>
 </html>
