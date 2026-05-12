@@ -2,7 +2,7 @@
    STUDIO BOOST 46 — Feuille de styles principale
    ================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+/* Google Fonts loaded asynchronously in HTML <head> to avoid render-blocking */
 
 /* ------------------------------------------------
    Variables
@@ -419,7 +419,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .footer__logo-text { font-family: var(--font-h); font-size: 1rem; font-weight: 700; color: #fff; }
 .footer__logo-text strong { color: var(--primary); }
 .footer__tagline { font-size: .88rem; line-height: 1.75; max-width: 280px; margin-bottom: 24px; }
-.footer__col h5 { font-family: var(--font-h); color: #fff; margin-bottom: 20px; font-size: .95rem; font-weight: 700; }
+.footer__col h3 { font-family: var(--font-h); color: #fff; margin-bottom: 20px; font-size: .95rem; font-weight: 700; }
 .footer__col ul { display: flex; flex-direction: column; gap: 11px; }
 .footer__col a { font-size: .88rem; transition: color var(--t); }
 .footer__col a:hover { color: var(--primary); }

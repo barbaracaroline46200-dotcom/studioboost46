@@ -6,6 +6,10 @@
   <meta name="description" content="Studio Boost 46 — Votre site internet en 72h chrono. Simple, efficace, sans jargon. Pour artisans, commerçants et entrepreneurs du Lot (46) et alentours. À partir de 290€." />
   <title>Studio Boost 46 — Site internet en 72H | Souillac, Lot</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" onload="this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap"></noscript>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
 </head>
 <body>
@@ -37,6 +41,7 @@
   <a href="contact.html" class="btn btn--primary">Démarrer mon projet →</a>
 </nav>
 
+<main>
 <!-- ====== HERO ====== -->
 <section class="hero">
   <div class="hero__glow"></div>
@@ -201,12 +206,52 @@
       </div>
 
     </div>
-    <p style="text-align:center; margin-top: 40px; color: var(--text-muted); font-size:.9rem;">
-      + Option <strong style="color:var(--primary)">Maintenance 29€/mois</strong> disponible sur toutes les formules
-      (hébergement géré + mises à jour mensuelles)
-    </p>
   </div>
 </section>
+
+<!-- ====== MAINTENANCE HIGHLIGHT ====== -->
+<section class="section" style="background: var(--dark); color: #fff; padding: 80px 0;">
+  <div class="container">
+    <div class="maintenance-grid-responsive" style="display:grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
+      <div class="fade-up">
+        <span class="badge badge--light" style="margin-bottom:24px;">Le vrai lâcher-prise</span>
+        <h2 style="font-family:var(--font-h); font-size:clamp(1.8rem,3.5vw,2.6rem); color:#fff; line-height:1.2; margin-bottom:20px;">
+          Votre site se met à jour<br/><span class="gradient-text">tout seul.</span><br/>
+          <span style="font-size:.65em; font-weight:600; opacity:.7;">(Bon, c'est moi qui m'en charge. Mais vous, vous ne faites rien.)</span>
+        </h2>
+        <p style="color:rgba(255,255,255,.75); font-size:1.05rem; line-height:1.7; margin-bottom:24px;">
+          Chaque mois, vous me dites : <em>"Mets en avant la promo de l'été."</em> Je mets.
+          <em>"Ajoute la nouvelle carte."</em> J'ajoute.
+          <em>"Google adore ça."</em> Eh oui, il adore les sites qui bougent.
+          Vos clients voient du nouveau. Vous, vous buvez votre café.
+        </p>
+        <p style="color:rgba(255,255,255,.6); font-size:.95rem; margin-bottom:32px;">
+          Hébergement inclus · Mises à jour de sécurité · Modifications mensuelles · Sans engagement
+        </p>
+        <a href="contact.html" class="btn btn--primary btn--lg">Je veux ce calme absolu →</a>
+      </div>
+      <div class="fade-up delay-2" style="text-align:center;">
+        <div style="background: linear-gradient(135deg, #1ABFBE22, #1ABFBE11); border: 2px solid #1ABFBE44; border-radius: 28px; padding: 50px 40px; display:inline-block;">
+          <div style="font-size: 5rem; font-weight:800; font-family:var(--font-h); color: var(--primary); line-height:1;">30€</div>
+          <div style="color:rgba(255,255,255,.6); font-size:1.1rem; margin-top:8px; margin-bottom:28px;">/ mois · sans engagement</div>
+          <ul style="list-style:none; text-align:left; color:rgba(255,255,255,.8); font-size:.95rem; line-height:2;">
+            <li>✓ Hébergement professionnel géré</li>
+            <li>✓ Modifications mensuelles incluses</li>
+            <li>✓ Mises à jour de sécurité</li>
+            <li>✓ Support prioritaire</li>
+            <li>✓ Google qui revient régulièrement</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+@media (max-width: 768px) {
+  .maintenance-grid-responsive { grid-template-columns: 1fr !important; }
+}
+</style>
 
 <!-- ====== PROCESSUS ====== -->
 <section class="section">
@@ -281,28 +326,28 @@
           <div class="why__point">
             <div class="why__icon">⚡</div>
             <div class="why__point-text">
-              <h4>72H, c'est ma promesse</h4>
+              <h3>72H, c'est ma promesse</h3>
               <p>Dès que vous m'avez fourni vos éléments, votre site est en ligne en 72 heures. Chrono.</p>
             </div>
           </div>
           <div class="why__point">
             <div class="why__icon">🗺️</div>
             <div class="why__point-text">
-              <h4>Ancrée dans le Lot (46)</h4>
+              <h3>Ancrée dans le Lot (46)</h3>
               <p>Je connais votre territoire, vos clients, votre réalité. On peut se rencontrer si besoin.</p>
             </div>
           </div>
           <div class="why__point">
             <div class="why__icon">💬</div>
             <div class="why__point-text">
-              <h4>Zéro jargon, tout en clair</h4>
+              <h3>Zéro jargon, tout en clair</h3>
               <p>Je vous explique tout simplement, vous gardez la main sur votre site et savez exactement ce que vous payez.</p>
             </div>
           </div>
           <div class="why__point">
             <div class="why__icon">💶</div>
             <div class="why__point-text">
-              <h4>Tarifs transparents, sans surprise</h4>
+              <h3>Tarifs transparents, sans surprise</h3>
               <p>50% à la commande, 50% à la livraison. Pas de frais cachés, pas de mauvaises surprises.</p>
             </div>
           </div>
@@ -344,13 +389,11 @@
           du Lot (46) et alentours.
         </p>
         <div class="footer__social">
-          <a href="#" aria-label="Facebook">f</a>
-          <a href="#" aria-label="Instagram">in</a>
-          <a href="#" aria-label="LinkedIn">Li</a>
+          <a href="https://www.facebook.com/share/1CuA4sLjBP/?mibextid=wwXIfr" aria-label="Facebook" target="_blank" rel="noopener">f</a>
         </div>
       </div>
       <div class="footer__col">
-        <h5>Navigation</h5>
+        <h3>Navigation</h3>
         <ul>
           <li><a href="index.html">Accueil</a></li>
           <li><a href="services.html">Services & Tarifs</a></li>
@@ -359,7 +402,7 @@
         </ul>
       </div>
       <div class="footer__col">
-        <h5>Contact</h5>
+        <h3>Contact</h3>
         <ul>
           <li>📍 Souillac (46200), Lot</li>
           <li>⚡ Livraison en 72H</li>
@@ -376,6 +419,7 @@
   </div>
 </footer>
 
+</main>
 <script src="script.js"></script>
 </body>
 </html>

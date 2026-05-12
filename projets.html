@@ -6,6 +6,10 @@
   <meta name="description" content="Découvrez les réalisations de Studio Boost 46 : sites internet pour artisans, commerçants, restaurants, thérapeutes et indépendants du Lot et alentours." />
   <title>Nos Projets — Studio Boost 46</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" onload="this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap"></noscript>
   <style>
     /* Maquettes visuelles pour les cartes projets */
     .thumb-boulangerie { background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%); }
@@ -75,6 +79,7 @@
   <a href="contact.html" class="btn btn--primary">Démarrer mon projet →</a>
 </nav>
 
+<main>
 <!-- ====== PAGE HERO ====== -->
 <section class="page-hero">
   <div class="page-hero__inner">
@@ -84,236 +89,47 @@
   </div>
 </section>
 
-<!-- ====== PROJETS ====== -->
+<!-- ====== PROJETS EN COURS ====== -->
 <section class="projets-section">
   <div class="container">
+    <div style="text-align:center; padding: 80px 20px 60px; max-width: 720px; margin: 0 auto;">
+      <div style="font-size: 4rem; margin-bottom: 24px;">🚧</div>
+      <span class="badge" style="margin-bottom: 24px;">Chantiers en cours</span>
+      <h2 style="font-family:var(--font-h); font-size:clamp(1.8rem,3.5vw,2.6rem); color:var(--dark); margin: 16px 0 20px; line-height:1.2;">
+        Les premiers sites sont <span class="gradient-text">en cours de création.</span>
+      </h2>
+      <p style="font-size:1.05rem; color:var(--text-muted); line-height:1.75; margin-bottom: 40px;">
+        Studio Boost 46 vient de lancer — les projets sont en cours de finalisation et
+        seront publiés ici dès leur mise en ligne. Revenez bientôt, ça va être bien.
+      </p>
+      <p style="font-size:.95rem; color:var(--text-muted); margin-bottom:40px;">
+        En attendant, vous pouvez déjà voir à quoi ressemble <strong style="color:var(--primary)">ce site</strong> —
+        il est lui-même une réalisation Studio Boost 46.
+        Pas mal pour une vitrine, non ?
+      </p>
 
-    <div class="filter-bar fade-up">
-      <button class="filter-btn active" data-filter="all">Tous les projets</button>
-      <button class="filter-btn" data-filter="artisan">Artisans</button>
-      <button class="filter-btn" data-filter="commerce">Commerces</button>
-      <button class="filter-btn" data-filter="service">Services & Santé</button>
-      <button class="filter-btn" data-filter="restaurant">Restauration</button>
-    </div>
-
-    <div class="projets-grid">
-
-      <!-- Boulangerie -->
-      <div class="projet-card fade-up delay-1" data-type="commerce">
-        <div class="projet-thumb thumb-boulangerie">
-          <div class="thumb-inner">
-            <span class="thumb-emoji">🥐</span>
-            <span class="thumb-label">Boulangerie</span>
-          </div>
-          <div class="browser-mockup">
-            <div class="browser-dots">
-              <div class="browser-dot"></div><div class="browser-dot"></div><div class="browser-dot"></div>
-            </div>
-            <div class="browser-bar">www.boulangerie-martin-souillac.fr</div>
-          </div>
+      <div style="display:flex; gap:20px; flex-wrap:wrap; justify-content:center; margin-bottom:60px;">
+        <div style="background:var(--bg-alt); border:1px solid var(--border); border-radius:var(--radius); padding:28px 32px; flex:1; min-width:200px; max-width:220px;">
+          <div style="font-size:2.2rem; margin-bottom:12px;">🔧</div>
+          <div style="font-weight:700; color:var(--dark); margin-bottom:6px;">Artisan</div>
+          <div style="font-size:.85rem; color:var(--text-muted);">Site en cours de réalisation</div>
+          <div style="margin-top:12px; display:inline-block; background:var(--primary); width:60px; height:4px; border-radius:2px; opacity:.4;"></div>
         </div>
-        <div class="projet-body">
-          <div class="projet-tags">
-            <span class="projet-tag tag-formule">Formule Pro</span>
-            <span class="projet-tag tag-type">Commerce</span>
-          </div>
-          <h3>Boulangerie Martin</h3>
-          <p>Site vitrine 4 pages avec galerie des créations, horaires, carte de la boutique et formulaire de commande spéciale.</p>
+        <div style="background:var(--bg-alt); border:1px solid var(--border); border-radius:var(--radius); padding:28px 32px; flex:1; min-width:200px; max-width:220px;">
+          <div style="font-size:2.2rem; margin-bottom:12px;">🍽️</div>
+          <div style="font-weight:700; color:var(--dark); margin-bottom:6px;">Restauration</div>
+          <div style="font-size:.85rem; color:var(--text-muted);">Site en cours de réalisation</div>
+          <div style="margin-top:12px; display:inline-block; background:var(--primary); width:40px; height:4px; border-radius:2px; opacity:.4;"></div>
+        </div>
+        <div style="background:var(--bg-alt); border:1px solid var(--border); border-radius:var(--radius); padding:28px 32px; flex:1; min-width:200px; max-width:220px;">
+          <div style="font-size:2.2rem; margin-bottom:12px;">💆</div>
+          <div style="font-weight:700; color:var(--dark); margin-bottom:6px;">Bien-être</div>
+          <div style="font-size:.85rem; color:var(--text-muted);">Site en cours de réalisation</div>
+          <div style="margin-top:12px; display:inline-block; background:var(--primary); width:80px; height:4px; border-radius:2px; opacity:.4;"></div>
         </div>
       </div>
 
-      <!-- Plombier -->
-      <div class="projet-card fade-up delay-2" data-type="artisan">
-        <div class="projet-thumb thumb-plombier">
-          <div class="thumb-inner">
-            <span class="thumb-emoji">🔧</span>
-            <span class="thumb-label">Plomberie</span>
-          </div>
-          <div class="browser-mockup">
-            <div class="browser-dots">
-              <div class="browser-dot"></div><div class="browser-dot"></div><div class="browser-dot"></div>
-            </div>
-            <div class="browser-bar">www.plomberie-duval-lot.fr</div>
-          </div>
-        </div>
-        <div class="projet-body">
-          <div class="projet-tags">
-            <span class="projet-tag tag-formule">Formule Essentiel</span>
-            <span class="projet-tag tag-type">Artisan</span>
-          </div>
-          <h3>Plomberie Duval</h3>
-          <p>Page unique avec coordonnées, zone d'intervention, Google Maps et bouton d'appel direct — visible sur Google en 48H.</p>
-        </div>
-      </div>
-
-      <!-- Kiné -->
-      <div class="projet-card fade-up delay-3" data-type="service">
-        <div class="projet-thumb thumb-kine">
-          <div class="thumb-inner">
-            <span class="thumb-emoji">💆</span>
-            <span class="thumb-label">Santé & Bien-être</span>
-          </div>
-          <div class="browser-mockup">
-            <div class="browser-dots">
-              <div class="browser-dot"></div><div class="browser-dot"></div><div class="browser-dot"></div>
-            </div>
-            <div class="browser-bar">www.kinesouillac.fr</div>
-          </div>
-        </div>
-        <div class="projet-body">
-          <div class="projet-tags">
-            <span class="projet-tag tag-formule">Formule Pro</span>
-            <span class="projet-tag tag-type">Santé</span>
-          </div>
-          <h3>Cabinet de Kinésithérapie Leroux</h3>
-          <p>Site complet avec présentation des soins, prise de rendez-vous en ligne, parcours du praticien et accès au cabinet.</p>
-        </div>
-      </div>
-
-      <!-- Restaurant -->
-      <div class="projet-card fade-up delay-1" data-type="restaurant">
-        <div class="projet-thumb thumb-restaurant">
-          <div class="thumb-inner">
-            <span class="thumb-emoji">🍽️</span>
-            <span class="thumb-label">Restauration</span>
-          </div>
-          <div class="browser-mockup">
-            <div class="browser-dots">
-              <div class="browser-dot"></div><div class="browser-dot"></div><div class="browser-dot"></div>
-            </div>
-            <div class="browser-bar">www.laterrasse-souillac.fr</div>
-          </div>
-        </div>
-        <div class="projet-body">
-          <div class="projet-tags">
-            <span class="projet-tag tag-formule">Formule Pro+</span>
-            <span class="projet-tag tag-type">Restaurant</span>
-          </div>
-          <h3>La Terrasse — Souillac</h3>
-          <p>Site avec carte du restaurant, galerie photos, réservation en ligne, blog actualités & menus du moment et boutique de coffrets cadeaux.</p>
-        </div>
-      </div>
-
-      <!-- Photographe -->
-      <div class="projet-card fade-up delay-2" data-type="service">
-        <div class="projet-thumb thumb-photo">
-          <div class="thumb-inner">
-            <span class="thumb-emoji">📸</span>
-            <span class="thumb-label">Photographie</span>
-          </div>
-          <div class="browser-mockup">
-            <div class="browser-dots">
-              <div class="browser-dot"></div><div class="browser-dot"></div><div class="browser-dot"></div>
-            </div>
-            <div class="browser-bar">www.photos-lot-quercy.fr</div>
-          </div>
-        </div>
-        <div class="projet-body">
-          <div class="projet-tags">
-            <span class="projet-tag tag-formule">Formule Pro+</span>
-            <span class="projet-tag tag-type">Créatif</span>
-          </div>
-          <h3>Maxime Fabre Photographe</h3>
-          <p>Portfolio professionnel avec galeries par thème (mariage, portrait, événement), blog et formulaire de devis personnalisé.</p>
-        </div>
-      </div>
-
-      <!-- Boutique mode -->
-      <div class="projet-card fade-up delay-3" data-type="commerce">
-        <div class="projet-thumb thumb-boutique">
-          <div class="thumb-inner">
-            <span class="thumb-emoji">👗</span>
-            <span class="thumb-label">Mode & Boutique</span>
-          </div>
-          <div class="browser-mockup">
-            <div class="browser-dots">
-              <div class="browser-dot"></div><div class="browser-dot"></div><div class="browser-dot"></div>
-            </div>
-            <div class="browser-bar">www.boutique-elegance-souillac.fr</div>
-          </div>
-        </div>
-        <div class="projet-body">
-          <div class="projet-tags">
-            <span class="projet-tag tag-formule">Formule Pro+</span>
-            <span class="projet-tag tag-type">Commerce</span>
-          </div>
-          <h3>Boutique Élégance</h3>
-          <p>Site e-commerce simple avec boutique en ligne, galerie des nouvelles collections, click & collect et formulaire de contact.</p>
-        </div>
-      </div>
-
-      <!-- Électricien -->
-      <div class="projet-card fade-up delay-1" data-type="artisan">
-        <div class="projet-thumb thumb-electricien">
-          <div class="thumb-inner">
-            <span class="thumb-emoji">⚡</span>
-            <span class="thumb-label">Électricité</span>
-          </div>
-          <div class="browser-mockup">
-            <div class="browser-dots">
-              <div class="browser-dot"></div><div class="browser-dot"></div><div class="browser-dot"></div>
-            </div>
-            <div class="browser-bar">www.elec-quercy.fr</div>
-          </div>
-        </div>
-        <div class="projet-body">
-          <div class="projet-tags">
-            <span class="projet-tag tag-formule">Formule Pro</span>
-            <span class="projet-tag tag-type">Artisan</span>
-          </div>
-          <h3>Élec Quercy — Rénovation & Installation</h3>
-          <p>Site 5 pages avec galerie de chantiers, zone d'intervention, demande de devis en ligne et certifications professionnelles.</p>
-        </div>
-      </div>
-
-      <!-- Coach -->
-      <div class="projet-card fade-up delay-2" data-type="service">
-        <div class="projet-thumb thumb-coach">
-          <div class="thumb-inner">
-            <span class="thumb-emoji">🌱</span>
-            <span class="thumb-label">Coaching & Bien-être</span>
-          </div>
-          <div class="browser-mockup">
-            <div class="browser-dots">
-              <div class="browser-dot"></div><div class="browser-dot"></div><div class="browser-dot"></div>
-            </div>
-            <div class="browser-bar">www.coaching-lot-bien-etre.fr</div>
-          </div>
-        </div>
-        <div class="projet-body">
-          <div class="projet-tags">
-            <span class="projet-tag tag-formule">Formule Pro+</span>
-            <span class="projet-tag tag-type">Service</span>
-          </div>
-          <h3>Sophie Vitale — Coach de vie</h3>
-          <p>Site avec présentation de l'accompagnement, témoignages clients, blog de conseils bien-être et prise de RDV découverte.</p>
-        </div>
-      </div>
-
-      <!-- Menuisier -->
-      <div class="projet-card fade-up delay-3" data-type="artisan">
-        <div class="projet-thumb thumb-menuisier">
-          <div class="thumb-inner">
-            <span class="thumb-emoji">🪵</span>
-            <span class="thumb-label">Menuiserie</span>
-          </div>
-          <div class="browser-mockup">
-            <div class="browser-dots">
-              <div class="browser-dot"></div><div class="browser-dot"></div><div class="browser-dot"></div>
-            </div>
-            <div class="browser-bar">www.menuiserie-peyrac-lot.fr</div>
-          </div>
-        </div>
-        <div class="projet-body">
-          <div class="projet-tags">
-            <span class="projet-tag tag-formule">Formule Pro</span>
-            <span class="projet-tag tag-type">Artisan</span>
-          </div>
-          <h3>Menuiserie Peyrac</h3>
-          <p>Site vitrine avec galerie de réalisations sur mesure (cuisines, escaliers, dressings), demande de devis et avis clients.</p>
-        </div>
-      </div>
-
+      <a href="contact.html" class="btn btn--primary btn--lg">Votre site sera le premier →</a>
     </div>
   </div>
 </section>
@@ -402,13 +218,11 @@
           du Lot (46) et alentours.
         </p>
         <div class="footer__social">
-          <a href="#" aria-label="Facebook">f</a>
-          <a href="#" aria-label="Instagram">in</a>
-          <a href="#" aria-label="LinkedIn">Li</a>
+          <a href="https://www.facebook.com/share/1CuA4sLjBP/?mibextid=wwXIfr" aria-label="Facebook" target="_blank" rel="noopener">f</a>
         </div>
       </div>
       <div class="footer__col">
-        <h5>Navigation</h5>
+        <h3>Navigation</h3>
         <ul>
           <li><a href="index.html">Accueil</a></li>
           <li><a href="services.html">Services & Tarifs</a></li>
@@ -417,7 +231,7 @@
         </ul>
       </div>
       <div class="footer__col">
-        <h5>Contact</h5>
+        <h3>Contact</h3>
         <ul>
           <li>📍 Souillac (46200), Lot</li>
           <li>⚡ Livraison en 72H</li>
@@ -434,6 +248,7 @@
   </div>
 </footer>
 
+</main>
 <script src="script.js"></script>
 </body>
 </html>
