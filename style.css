@@ -236,7 +236,7 @@ section { position: relative; }
 /* ===== PROCESS (sticky) ===== */
 .process { position: relative; background: var(--ink); color: var(--cream); }
 .process__inner { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; }
-.process__sticky { position: sticky; top: 140px; align-self: start; height: fit-content; }
+.process__sticky { position: sticky; top: calc(50vh - 120px); align-self: start; height: fit-content; }
 .process__count { font-family: var(--font-display); font-weight: 800; font-size: 14rem; line-height: .85; letter-spacing: -.06em; color: var(--teal); transition: transform .6s var(--ease-out); }
 .process__count em { font-family: var(--font-serif); font-style: italic; font-weight: 400; }
 .process__label { font-family: var(--font-mono); font-size: .78rem; text-transform: uppercase; letter-spacing: .18em; color: var(--muted); margin-top: 24px; }
@@ -446,6 +446,24 @@ section { position: relative; }
 .mentions-block ul { padding-left: 20px; }
 .mentions-block ul li { margin-bottom: 6px; }
 
+/* ===== MAINTENANCE CTA (index) ===== */
+.pricing__maint-cta { margin-top: 32px; }
+.pricing__maint-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; background: var(--ink); border: 1px solid var(--teal); border-radius: 20px; padding: 24px 32px; flex-wrap: wrap; }
+.pricing__maint-inner strong { font-family: var(--font-display); font-weight: 700; font-size: 1.1rem; color: var(--teal); display: block; margin-bottom: 4px; }
+.pricing__maint-inner span { font-size: .88rem; color: var(--muted); }
+.btn--teal-sm { display: inline-flex; align-items: center; gap: 8px; padding: 12px 20px; border-radius: 100px; background: var(--teal); color: var(--ink); font-weight: 600; font-size: .88rem; white-space: nowrap; transition: transform .3s var(--ease-out); }
+.btn--teal-sm:hover { transform: translateY(-2px); }
+
+/* ===== PHOTO ADD-ON (services) ===== */
+.photo-section { background: var(--ink-2); }
+.photo-addon { display: grid; grid-template-columns: auto 1fr; gap: 40px; align-items: center; background: var(--ink-3); border: 1px solid var(--line-light); border-radius: 28px; padding: 48px 56px; }
+.photo-addon__icon { font-size: 4rem; line-height: 1; }
+.photo-addon__content h3 { font-family: var(--font-display); font-weight: 700; font-size: 1.8rem; letter-spacing: -.02em; margin-bottom: 14px; color: var(--cream); }
+.photo-addon__content p { color: var(--muted); line-height: 1.65; max-width: 560px; }
+
+/* ===== PROJET TAG FORMULE ===== */
+.projet-card__tag--formule { background: rgba(26,191,190,.15); color: var(--teal); border: 1px solid rgba(26,191,190,.3); font-weight: 600; }
+
 /* ===== REVEAL ANIMATION ===== */
 .reveal { opacity: 0; transform: translateY(40px); transition: opacity 1s var(--ease-out), transform 1s var(--ease-out); }
 .reveal.in { opacity: 1; transform: none; }
@@ -479,14 +497,30 @@ section { position: relative; }
 @media (max-width: 780px) {
   .container { padding: 0 20px; }
   .pain__item { grid-template-columns: 1fr; gap: 14px; padding: 36px 0; }
+  /* Stats : 2x2, taille réduite pour tout voir */
   .stats { grid-template-columns: repeat(2,1fr); }
+  .stat { padding: 28px 16px; }
+  .stat__num { font-size: clamp(2.4rem, 10vw, 4rem); }
   .stat:nth-child(2) { border-right: 0; }
   .stat:nth-child(1), .stat:nth-child(2) { border-bottom: 1px solid var(--line-light); }
-  .process__inner { grid-template-columns: 1fr; gap: 40px; }
-  .process__sticky { position: static; }
-  .process__count { font-size: 8rem; }
+  /* Process : cacher le compteur sur mobile */
+  .process__inner { grid-template-columns: 1fr; gap: 0; }
+  .process__sticky { display: none; }
+  /* Hero meta : cacher sur mobile (passe sur les boutons) */
+  .hero__meta { display: none; }
+  /* Cartes pricing : border sur mobile pour Essentiel et Pro+ */
+  .pcard { outline: 1px solid var(--line-light); }
+  .pcard--star { outline: 2px solid var(--teal); }
+  /* Maintenance CTA */
+  .pricing__maint-inner { flex-direction: column; align-items: flex-start; gap: 16px; padding: 20px 24px; }
+  /* Photo addon */
+  .photo-addon { grid-template-columns: 1fr; gap: 20px; padding: 32px 24px; }
+  .photo-addon__icon { font-size: 2.6rem; }
   .footer__grid { grid-template-columns: 1fr; }
   .form-row { grid-template-columns: 1fr; }
   .cta-banner__bgtext { display: none; }
   .cta-banner { padding: 80px 0; }
+  /* Contact : optimisation mobile */
+  .contact-form-card { padding: 28px 20px; }
+  .contact-img { display: none; }
 }
