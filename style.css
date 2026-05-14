@@ -163,12 +163,35 @@ button { background: none; border: 0; font: inherit; color: inherit; cursor: poi
 .hero__meta .scroll-link { display: inline-flex; align-items: center; gap: 10px; }
 .scroll-arrow { width: 18px; height: 18px; border-radius: 50%; border: 1px solid var(--muted-2); display: inline-grid; place-items: center; font-size: .8rem; }
 
+/* ===== MORPHBLOB ===== */
+@keyframes morphblob {
+  0%,100% { border-radius: 67% 33% 42% 58% / 56% 44% 56% 44%; }
+  33%      { border-radius: 42% 58% 67% 33% / 44% 56% 44% 56%; }
+  66%      { border-radius: 58% 42% 33% 67% / 56% 44% 56% 44%; }
+}
+
 /* ===== PAGE HERO (inner pages) ===== */
 .page-hero {
   padding: 160px 0 100px; text-align: center; position: relative; overflow: hidden;
-  background: radial-gradient(ellipse 60% 60% at 15% 50%, rgba(26,191,190,.1), transparent 60%), var(--ink);
+  background: var(--ink);
 }
-.page-hero__inner { max-width: 860px; margin: 0 auto; padding: 0 32px; }
+.page-hero::before {
+  content: ""; position: absolute; top: -80px; left: -120px;
+  width: 500px; height: 500px;
+  background: rgba(26,191,190,.09);
+  border-radius: 67% 33% 42% 58% / 56% 44% 56% 44%;
+  animation: morphblob 14s ease-in-out infinite;
+  pointer-events: none;
+}
+.page-hero::after {
+  content: ""; position: absolute; bottom: -60px; right: -100px;
+  width: 360px; height: 360px;
+  background: rgba(26,191,190,.05);
+  border-radius: 42% 58% 67% 33% / 44% 56% 44% 56%;
+  animation: morphblob 18s ease-in-out infinite reverse;
+  pointer-events: none;
+}
+.page-hero__inner { max-width: 860px; margin: 0 auto; padding: 0 32px; position: relative; z-index: 2; }
 .page-hero__tag { font-family: var(--font-mono); font-size: .78rem; text-transform: uppercase; letter-spacing: .2em; color: var(--teal); display: inline-flex; align-items: center; gap: 14px; margin-bottom: 28px; }
 .page-hero__tag::before, .page-hero__tag::after { content: ""; width: 32px; height: 1px; background: currentColor; display: inline-block; }
 .page-hero h1 { font-family: var(--font-display); font-weight: 700; font-size: clamp(3rem, 7vw, 7rem); line-height: .92; letter-spacing: -.04em; color: var(--cream); margin-bottom: 28px; }
