@@ -274,7 +274,7 @@ html::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:9990;
 .pricing{display:grid;grid-template-columns:1fr 1.2fr 1fr;gap:16px;align-items:end;}
 /* 3D Feastie cards — thick border + flat shadow */
 .pcard{border-radius:24px;padding:40px 34px 34px;position:relative;display:flex;flex-direction:column;gap:16px;overflow:hidden;border:2.5px solid;transition:transform .4s var(--ease-out),box-shadow .4s var(--ease-out);}
-.pcard--side,.pcard:not(.pcard--star):not(.pcard--hero){background:var(--ink-2);border-color:rgba(245,241,234,.15);box-shadow:6px 6px 0 rgba(245,241,234,.08);}
+.pcard--side,.pcard:not(.pcard--star):not(.pcard--hero){background:var(--ink-2);color:var(--cream);border-color:rgba(245,241,234,.15);box-shadow:6px 6px 0 rgba(245,241,234,.08);}
 .pcard--side:hover,.pcard:not(.pcard--star):not(.pcard--hero):hover{transform:translate(-2px,-4px);box-shadow:8px 10px 0 rgba(245,241,234,.1);}
 .pcard--hero,.pcard--star{background:var(--teal);color:var(--ink);border-color:var(--ink);box-shadow:8px 8px 0 var(--ink);padding:52px 38px 42px;}
 .pcard--hero:hover,.pcard--star:hover{transform:translate(-3px,-6px);box-shadow:11px 14px 0 var(--ink);}
@@ -535,7 +535,7 @@ section{position:relative;}
 .photo-addon__content p{color:var(--muted);line-height:1.65;max-width:560px;}
 
 /* ── PAYMENT SECTION (services) ── */
-.payment-section{background:var(--ink-2);}
+.payment-section:not(.section--cream){background:var(--ink-2);}
 .payment-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:60px;}
 .payment-card{display:flex;align-items:flex-start;gap:20px;background:var(--ink-3);border:2.5px solid rgba(245,241,234,.1);border-radius:20px;padding:32px 28px;transition:border-color .3s,transform .3s,box-shadow .3s;}
 .payment-card:hover{border-color:var(--teal);transform:translate(-1px,-2px);box-shadow:4px 4px 0 rgba(26,191,190,.3);}
