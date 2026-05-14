@@ -41,7 +41,7 @@
   <a href="services.html">Services</a>
   <a href="projets.html">Projets</a>
   <a href="contact.html" class="active">Contact</a>
-  <a href="contact.html" class="btn btn--primary">Démarrer mon projet →</a>
+  <a href="contact.html" class="btn btn--teal">Démarrer mon projet →</a>
 </nav>
 
 <!-- PAGE HERO -->
@@ -52,6 +52,11 @@
     <p>Un message suffit. Réponse garantie en 24H, échange gratuit et sans engagement.</p>
   </div>
 </section>
+
+<!-- Wave ink -->
+<div class="wave wave-to-ink" style="background:var(--ink);">
+  <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,30 C240,80 480,0 720,40 C960,80 1200,10 1440,45 L1440,80 L0,80 Z"/></svg>
+</div>
 
 <!-- CONTACT SECTION -->
 <section class="contact-section">
@@ -155,7 +160,7 @@
               <textarea id="message" name="message" placeholder="Décrivez votre activité, ce que vous attendez de votre site, vos questions… Pas besoin d'être technique !" required></textarea>
             </div>
 
-            <button type="submit" class="btn btn--primary btn--lg form-submit">Envoyer mon message →</button>
+            <button type="submit" class="btn btn--teal btn--lg form-submit">Envoyer mon message →</button>
             <div class="form-success">✅ Message bien reçu ! Je vous réponds dans les 24H. À très vite !</div>
           </form>
         </div>
@@ -182,34 +187,47 @@
 </section>
 
 <!-- STATS RASSURANCE -->
-<div class="stats reveal">
-  <div class="stat">
-    <div class="stat__num">72<span class="unit">H</span></div>
-    <div class="stat__label">Délai de livraison garanti</div>
+<div class="stats-band">
+  <div class="container">
+    <div class="stats reveal">
+      <div class="stat">
+        <div class="stat__num">72<span class="unit">H</span></div>
+        <div class="stat__label">Délai de livraison garanti</div>
+      </div>
+      <div class="stat">
+        <div class="stat__num">24<span class="unit">H</span></div>
+        <div class="stat__label">Réponse à votre message</div>
+      </div>
+      <div class="stat">
+        <div class="stat__num"><em>0</em><span class="unit">€</span></div>
+        <div class="stat__label">Pour le premier échange</div>
+      </div>
+      <div class="stat">
+        <div class="stat__num">50<span class="unit">%</span></div>
+        <div class="stat__label">Seulement à la commande</div>
+      </div>
+    </div>
   </div>
-  <div class="stat">
-    <div class="stat__num">24<span class="unit">H</span></div>
-    <div class="stat__label">Réponse à votre message</div>
-  </div>
-  <div class="stat">
-    <div class="stat__num"><em>0</em><span class="unit">€</span></div>
-    <div class="stat__label">Pour le premier échange</div>
-  </div>
-  <div class="stat">
-    <div class="stat__num">50<span class="unit">%</span></div>
-    <div class="stat__label">Seulement à la commande</div>
-  </div>
+</div>
+
+<!-- Wave teal -->
+<div class="wave wave-to-teal" style="background:var(--ink);">
+  <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,55 C480,0 960,80 1440,28 L1440,80 L0,80 Z" fill="#1ABFBE"/></svg>
 </div>
 
 <!-- CTA -->
 <section class="cta-banner">
-  <div class="cta-banner__bgtext">GO</div>
-  <div class="container cta-banner__inner">
-    <span class="cta-banner__tag reveal">Votre projet mérite mieux qu'un template</span>
-    <h2 class="reveal reveal-d2">Dites-moi tout,<br>je m'occupe du <em>reste.</em></h2>
-    <div class="cta-banner__actions reveal reveal-d3">
-      <a href="services.html" class="btn btn--ghost-ink btn--lg">Voir les tarifs</a>
-      <a href="projets.html" class="btn btn--ink btn--lg">Voir les projets</a>
+  <div class="container">
+    <div class="cta-banner__inner reveal">
+      <div class="cta-banner__eyebrow"><div class="label-badge" style="background:rgba(10,14,15,.15);color:var(--ink);border:2.5px solid rgba(10,14,15,.25);">Votre projet mérite mieux qu'un template</div></div>
+      <h2>
+        <span class="cta-main">Dites-moi tout,<br></span>
+        <em>je m'occupe du reste.</em>
+      </h2>
+      <div class="cta-banner__actions">
+        <a href="services.html" class="btn btn--cream btn--lg">Voir les tarifs</a>
+        <a href="projets.html" class="btn btn--ink btn--lg">Voir les projets</a>
+      </div>
     </div>
   </div>
 </section>

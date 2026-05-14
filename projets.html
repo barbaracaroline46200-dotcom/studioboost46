@@ -41,7 +41,7 @@
   <a href="services.html">Services</a>
   <a href="projets.html" class="active">Projets</a>
   <a href="contact.html">Contact</a>
-  <a href="contact.html" class="btn btn--primary">Démarrer mon projet →</a>
+  <a href="contact.html" class="btn btn--teal">Démarrer mon projet →</a>
 </nav>
 
 <!-- PAGE HERO -->
@@ -52,6 +52,11 @@
     <p>Artisans, commerçants, thérapeutes, restaurateurs… Voici ce que je crée pour des professionnels comme vous.</p>
   </div>
 </section>
+
+<!-- Wave ink (stays dark) -->
+<div class="wave wave-to-ink" style="background:var(--ink);">
+  <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,30 C240,80 480,0 720,40 C960,80 1200,10 1440,45 L1440,80 L0,80 Z"/></svg>
+</div>
 
 <!-- PROJETS RÉALISÉS -->
 <section class="section projets-section">
@@ -112,7 +117,7 @@
           <div class="projets-wip__bar" style="width:80px"></div>
         </div>
       </div>
-      <a href="contact.html" class="btn btn--primary btn--lg">Votre site sera le prochain →</a>
+      <a href="contact.html" class="btn btn--teal btn--lg">Votre site sera le prochain →</a>
     </div>
   </div>
 </section>
@@ -123,6 +128,11 @@
     <span>ARTISANS <em>·</em> COMMERÇANTS <em>·</em> THÉRAPEUTES <em>·</em> RESTAURATEURS <em>·</em> COACHES <em>·</em> INDÉPENDANTS <em>·</em> PROFESSIONS LIBÉRALES <em>·</em></span>
     <span aria-hidden="true">ARTISANS <em>·</em> COMMERÇANTS <em>·</em> THÉRAPEUTES <em>·</em> RESTAURATEURS <em>·</em> COACHES <em>·</em> INDÉPENDANTS <em>·</em> PROFESSIONS LIBÉRALES <em>·</em></span>
   </div>
+</div>
+
+<!-- Wave cream -->
+<div class="wave wave-to-cream" style="background:var(--ink);">
+  <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,45 C360,0 720,80 1080,30 C1260,5 1380,55 1440,35 L1440,80 L0,80 Z" fill="#F5F1EA"/></svg>
 </div>
 
 <!-- TÉMOIGNAGES -->
@@ -189,15 +199,24 @@
   </div>
 </section>
 
+<!-- Wave teal -->
+<div class="wave wave-to-teal" style="background:var(--ink);">
+  <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,55 C480,0 960,80 1440,28 L1440,80 L0,80 Z" fill="#1ABFBE"/></svg>
+</div>
+
 <!-- CTA -->
 <section class="cta-banner">
-  <div class="cta-banner__bgtext">GO</div>
-  <div class="container cta-banner__inner">
-    <span class="cta-banner__tag reveal">Et si c'était votre tour ?</span>
-    <h2 class="reveal reveal-d2">Votre site pourrait<br>être le <em>prochain.</em></h2>
-    <div class="cta-banner__actions reveal reveal-d3">
-      <a href="contact.html" class="btn btn--ink btn--lg">Démarrer mon projet →</a>
-      <a href="services.html" class="btn btn--ghost-ink btn--lg">Voir les tarifs</a>
+  <div class="container">
+    <div class="cta-banner__inner reveal">
+      <div class="cta-banner__eyebrow"><div class="label-badge" style="background:rgba(10,14,15,.15);color:var(--ink);border:2.5px solid rgba(10,14,15,.25);">Et si c'était votre tour ?</div></div>
+      <h2>
+        <span class="cta-main">Votre site pourrait<br></span>
+        <em>être le prochain.</em>
+      </h2>
+      <div class="cta-banner__actions">
+        <a href="contact.html" class="btn btn--cream btn--lg">Démarrer mon projet →</a>
+        <a href="services.html" class="btn btn--ink btn--lg">Voir les tarifs</a>
+      </div>
     </div>
   </div>
 </section>
