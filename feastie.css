@@ -697,5 +697,7 @@ section{position:relative;}
   .cta-banner{padding:80px 0;}
   .pricing__maint-inner{flex-direction:column;align-items:flex-start;gap:16px;padding:20px 24px;}
   .page-hero{padding:120px 0 70px;}
+  .page-hero__inner{padding:0 20px;}
+  .page-hero h1{font-size:clamp(1.8rem,10vw,3rem);}
   .section{padding:70px 0;}
 }
