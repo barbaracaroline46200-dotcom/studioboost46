@@ -548,6 +548,14 @@ section{position:relative;}
 .section--cream .payment-card h4{color:var(--ink);}
 .section--cream .payment-card p{color:var(--muted-2);}
 .section--cream .payment-icon{background:rgba(13,144,144,.1);border-color:rgba(13,144,144,.25);}
+/* Fix explicit : titre paiement toujours lisible */
+.payment-section.section--cream .section__title{color:var(--ink);}
+.payment-section.section--cream .section__title em{color:var(--teal-dark);}
+/* Fix explicit : pcards non-vedettes dans section cream → fond sombre, texte clair */
+.section--cream .pcard:not(.pcard--star):not(.pcard--hero){background:var(--ink-2);color:var(--cream);border-color:rgba(245,241,234,.15);}
+.section--cream .pcard:not(.pcard--star):not(.pcard--hero) .pcard__price{border-top-color:rgba(245,241,234,.15);border-bottom-color:rgba(245,241,234,.15);}
+.section--cream .pcard:not(.pcard--star):not(.pcard--hero) .pcard__price strong{color:var(--cream);}
+.section--cream .pcard:not(.pcard--star):not(.pcard--hero) .pcard__price small{color:var(--cream);}
 
 /* ── FAQ ACCORDION (pages secondaires — dark bg default) ── */
 .faq-section{padding:100px 0;}
