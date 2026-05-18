@@ -3,9 +3,39 @@
   "configurations": [
     {
       "name": "studio-boost-46",
-      "runtimeExecutable": "npx",
-      "runtimeArgs": ["serve", "-p", "4800", "."],
+      "runtimeExecutable": "/opt/homebrew/bin/python3",
+      "runtimeArgs": ["-m", "http.server", "4800"],
       "port": 4800
+    },
+    {
+      "name": "celia-mockup",
+      "runtimeExecutable": "/opt/homebrew/bin/python3",
+      "runtimeArgs": ["-m", "http.server", "7347", "--directory", "celia-mockup"],
+      "port": 7347
+    }
+  ,{
+      "name": "lauvie-maquette",
+      "runtimeExecutable": "/usr/bin/python3",
+      "runtimeArgs": ["-m", "http.server", "7348"],
+      "port": 7348
+    }
+  ,{
+      "name": "redesign-2026",
+      "runtimeExecutable": "/usr/bin/python3",
+      "runtimeArgs": ["-m", "http.server", "7349", "--directory", "/Users/barbarabenoit/Library/Mobile Documents/com~apple~CloudDocs/StudioBoost46/Studio Boost 46/Studio Boost 46 Design System_files"],
+      "port": 7349
+    }
+  ,{
+      "name": "appli-studioboost46",
+      "runtimeExecutable": "/opt/homebrew/bin/python3",
+      "runtimeArgs": ["-m", "http.server", "4803", "--directory", "/Users/barbarabenoit/Library/Mobile Documents/com~apple~CloudDocs/StudioBoost46/Studio Boost 46/Appli StudioBoost46"],
+      "port": 4803
+    }
+  ,{
+      "name": "boxfitgym",
+      "runtimeExecutable": "/opt/homebrew/bin/python3",
+      "runtimeArgs": ["-m", "http.server", "4802", "--directory", "/Users/barbarabenoit/Library/Mobile Documents/com~apple~CloudDocs/StudioBoost46/Clients/boxfitgym"],
+      "port": 4802
     }
   ]
 }
