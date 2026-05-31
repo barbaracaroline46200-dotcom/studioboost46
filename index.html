@@ -1,969 +1,264 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YHTVVJS57M"></script>
-  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YHTVVJS57M');</script>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Création de sites web clés en main pour artisans, commerçants et entrepreneurs du Lot (46). Livraison en 72H. À partir de 290€. Basée à Souillac." />
-  <title>Studio Boost 46 — Sites web pour artisans et entrepreneurs du Lot (46)</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter+Tight:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <style>
-/* ======================================================
-   STUDIO BOOST 46 — Feastie × Studio Neo 2026
-   Adapté Feastie : extrusion 3D, badges épais, énergie max
-   ====================================================== */
-:root {
-  --ink:        #0A0E0F;
-  --ink-2:      #10171A;
-  --ink-3:      #1A2326;
-  --cream:      #F5F1EA;
-  --cream-2:    #EDE6D8;
-  --cream-3:    #E2DACB;
-  --teal:       #1ABFBE;
-  --teal-vivid: #00D4D2;
-  --teal-light: #5BE5E3;
-  --teal-pale:  #A8F0EF;
-  --teal-dark:  #0D9090;
-  --teal-xdark: #086868;
-  --white:      #FFFFFF;
-  --muted:      #8B9698;
-  --muted-2:    #5A6669;
-  --line-light: rgba(245,241,234,.1);
-  --font-display: 'Syne', sans-serif;
-  --font-body:    'Inter Tight', sans-serif;
-  --font-serif:   'Instrument Serif', serif;
-  --font-mono:    'JetBrains Mono', monospace;
-  --ease:     cubic-bezier(.4,0,.2,1);
-  --ease-out: cubic-bezier(.2,.7,.2,1);
-}
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
-html{scroll-behavior:smooth;}
-html,body{background:var(--ink);color:var(--cream);font-family:var(--font-body);-webkit-font-smoothing:antialiased;overflow-x:hidden;}
-body{font-size:16px;line-height:1.55;}
-img{display:block;max-width:100%;}
-a{color:inherit;text-decoration:none;}
-button{background:none;border:0;font:inherit;color:inherit;cursor:pointer;}
-::selection{background:var(--teal);color:var(--ink);}
-.container{width:100%;max-width:1380px;margin:0 auto;padding:0 48px;}
-
-/* ── GRAIN ── */
-html::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:9990;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.88' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)'/%3E%3C/svg%3E");
-  opacity:.038;}
-
-/* ── CURSOR ── */
-.cursor{position:fixed;top:0;left:0;width:12px;height:12px;border-radius:50%;background:var(--teal);pointer-events:none;z-index:9999;mix-blend-mode:difference;transform:translate(-50%,-50%);transition:width .3s var(--ease),height .3s var(--ease);}
-.cursor.is-hover{width:56px;height:56px;}
-@media(max-width:900px){.cursor{display:none;}}
-
-/* ── NAV ── */
-.nav{position:fixed;inset:0 0 auto 0;z-index:50;padding:18px 0;transition:background .4s var(--ease),border-color .4s var(--ease);border-bottom:1px solid transparent;}
-.nav.is-scrolled{background:rgba(10,14,15,.93);backdrop-filter:blur(24px) saturate(1.3);border-color:var(--line-light);}
-.nav__inner{display:flex;align-items:center;justify-content:space-between;gap:24px;}
-.nav__logo{display:flex;align-items:center;gap:10px;font-family:var(--font-display);font-weight:800;font-size:1.05rem;}
-.nav__logo img{width:30px;height:30px;border-radius:8px;}
-.nav__logo strong{color:var(--teal);}
-.nav__links{display:flex;gap:32px;list-style:none;font-size:.9rem;font-weight:500;}
-.nav__links a{color:var(--cream);opacity:.7;position:relative;padding:6px 0;transition:opacity .3s;}
-.nav__links a::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:2px;background:var(--teal);transform:scaleX(0);transform-origin:left;transition:transform .4s var(--ease);}
-.nav__links a:hover,.nav__links a.active{opacity:1;}
-.nav__links a:hover::after,.nav__links a.active::after{transform:scaleX(1);}
-.nav__cta{display:inline-flex;align-items:center;gap:8px;padding:11px 22px;border-radius:12px;background:var(--teal);color:var(--ink);font-weight:800;font-size:.88rem;box-shadow:0 4px 0 var(--teal-dark);transition:transform .15s,box-shadow .15s;}
-.nav__cta:hover{transform:translateY(2px);box-shadow:0 2px 0 var(--teal-dark);}
-.nav__cta:active{transform:translateY(4px);box-shadow:none;}
-.nav__burger{display:none;flex-direction:column;gap:5px;padding:4px;cursor:pointer;}
-.nav__burger span{display:block;width:24px;height:2px;background:var(--cream);border-radius:2px;transition:all .3s;}
-
-/* ── BUTTONS — Feastie flat-offset shadow style ── */
-.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 28px;border-radius:12px;font-weight:800;font-size:.95rem;cursor:pointer;border:2.5px solid var(--ink);white-space:nowrap;font-family:var(--font-body);position:relative;transition:background .15s,transform .12s,box-shadow .12s,gap .2s;user-select:none;}
-.btn::after{content:"→";font-size:.95em;transition:transform .2s;}
-.btn:hover::after{transform:translateX(4px);}
-.btn--teal{background:var(--teal);color:var(--ink);border-color:var(--ink);box-shadow:3px 3px 0 var(--ink);}
-.btn--teal:hover{transform:translate(-1px,-1px);box-shadow:5px 5px 0 var(--ink);}
-.btn--teal:active{transform:translate(3px,3px);box-shadow:none;}
-.btn--outline{background:transparent;color:var(--cream);border-color:rgba(245,241,234,.5);box-shadow:3px 3px 0 rgba(245,241,234,.2);}
-.btn--outline:hover{transform:translate(-1px,-1px);box-shadow:5px 5px 0 rgba(245,241,234,.3);border-color:var(--cream);}
-.btn--outline:active{transform:translate(3px,3px);box-shadow:none;}
-.btn--cream{background:var(--white);color:var(--ink);border-color:var(--ink);box-shadow:3px 3px 0 var(--ink);}
-.btn--cream:hover{transform:translate(-1px,-1px);box-shadow:5px 5px 0 var(--ink);}
-.btn--cream:active{transform:translate(3px,3px);box-shadow:none;}
-.btn--ink{background:var(--ink);color:var(--cream);border-color:rgba(245,241,234,.35);box-shadow:3px 3px 0 rgba(245,241,234,.25);}
-.btn--ink:hover{transform:translate(-1px,-1px);box-shadow:5px 5px 0 rgba(245,241,234,.35);}
-.btn--ink:active{transform:translate(3px,3px);box-shadow:none;}
-.btn--lg{padding:18px 36px;font-size:1.05rem;}
-.btn--sm{padding:9px 18px;font-size:.82rem;}
-
-/* ── FEASTIE LABEL BADGE (thick border pill) ── */
-.label-badge{display:inline-flex;align-items:center;gap:8px;padding:8px 20px;border-radius:100px;font-family:var(--font-display);font-weight:800;font-size:.8rem;letter-spacing:.04em;text-transform:uppercase;border:2.5px solid currentColor;}
-.label-badge--teal{background:var(--teal);color:var(--ink);border-color:var(--ink);}
-.label-badge--cream{background:var(--cream);color:var(--ink);border-color:var(--ink);}
-.label-badge--outline{background:transparent;color:var(--teal);border-color:var(--teal);}
-.label-badge--outline-cream{background:transparent;color:var(--cream);border-color:var(--cream);}
-.label-badge .dot{width:7px;height:7px;border-radius:50%;background:currentColor;flex-shrink:0;}
-
-/* ── 3D EXTRUDED TEXT (Feastie hero signature) ── */
-/* Usage: on a span inside big titles */
-.text-3d-teal{
-  color:var(--teal);
-  /* Multiple shadows for thick extrusion */
-  text-shadow:
-    2px 2px 0 var(--teal-dark),
-    4px 4px 0 var(--teal-xdark),
-    6px 6px 0 rgba(13,144,144,.4),
-    8px 8px 0 rgba(13,144,144,.15);
-}
-.text-3d-cream{
-  color:var(--cream);
-  -webkit-text-stroke:2px var(--ink);
-  text-shadow:
-    3px 3px 0 var(--ink),
-    6px 6px 0 rgba(10,14,15,.3);
-}
-.text-3d-ink-on-teal{
-  color:var(--ink);
-  text-shadow:
-    2px 2px 0 rgba(10,14,15,.3),
-    4px 4px 0 rgba(10,14,15,.15);
-}
-/* Outline-only text (Feastie uses this for footer logos) */
-.text-outline{
-  color:transparent;
-  -webkit-text-stroke:2px var(--cream);
-}
-
-/* ── MORPHING BLOB (organic animated shape) ── */
-.morph-blob{
-  position:absolute;pointer-events:none;z-index:0;
-  animation:morphblob 14s ease-in-out infinite;
-}
-@keyframes morphblob{
-  0%,100%{border-radius:67% 33% 42% 58%/56% 44% 56% 44%;}
-  33%{border-radius:42% 58% 67% 33%/44% 56% 44% 56%;}
-  66%{border-radius:58% 42% 33% 67%/56% 44% 56% 44%;}
-}
-
-/* ── LIVE DOT ── */
-.live-dot{width:7px;height:7px;border-radius:50%;background:currentColor;animation:pulse 1.6s infinite;flex-shrink:0;}
-@keyframes pulse{0%{box-shadow:0 0 0 0 currentColor;}70%{box-shadow:0 0 0 7px transparent;}100%{box-shadow:0 0 0 0 transparent;}}
-
-/* ── WAVE SVG dividers ── */
-.wave{display:block;width:100%;overflow:hidden;line-height:0;margin-bottom:-1px;}
-.wave svg{display:block;width:100%;}
-
-/* ── MARQUEE ── */
-.marquee{padding:28px 0;border-block:2.5px solid var(--cream);background:var(--teal);overflow:hidden;}
-.marquee__track{display:flex;gap:48px;white-space:nowrap;animation:scroll-m 32s linear infinite;font-family:var(--font-display);font-weight:800;font-size:clamp(1.6rem,4vw,3.2rem);letter-spacing:-.02em;color:var(--ink);align-items:center;}
-.marquee__track span{display:inline-flex;align-items:center;gap:48px;}
-.marquee__track em{font-family:var(--font-serif);font-style:italic;color:var(--ink);font-weight:400;opacity:.7;}
-.marquee__dot{width:10px;height:10px;border-radius:50%;background:var(--ink);flex-shrink:0;opacity:.5;}
-@keyframes scroll-m{to{transform:translateX(-50%);}}
-.marquee--dark{background:var(--ink);border-color:var(--line-light);}
-.marquee--dark .marquee__track{color:var(--cream);}
-.marquee--dark .marquee__dot{background:var(--teal);opacity:.8;}
-.marquee--dark .marquee__track em{color:var(--teal);opacity:1;}
-.marquee--rev .marquee__track{animation-direction:reverse;animation-duration:44s;}
-
-/* ── REVEAL ── */
-.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s var(--ease-out),transform .7s var(--ease-out);}
-.reveal.in{opacity:1;transform:none;}
-.reveal-d2{transition-delay:.13s;}
-.reveal-d3{transition-delay:.24s;}
-.reveal-d4{transition-delay:.35s;}
-
-/* ══════════════════════════════════════════
-   HERO — Dark bg, Feastie energy
-══════════════════════════════════════════ */
-.hero{position:relative;min-height:100vh;padding:120px 0 80px;overflow:hidden;background:var(--ink);}
-.hero__blob-1{top:10%;left:-120px;width:500px;height:500px;background:rgba(26,191,190,.1);}
-.hero__blob-2{bottom:-60px;right:-100px;width:360px;height:360px;background:rgba(26,191,190,.06);animation-delay:-7s;}
-.hero__grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;min-height:calc(100vh - 200px);position:relative;z-index:2;}
-
-/* Title with Feastie 3D extrusion */
-.hero__title{font-family:var(--font-display);font-weight:800;font-size:clamp(3.5rem,6.8vw,7.8rem);line-height:.88;letter-spacing:-.045em;}
-.hero__title .l{display:block;overflow:hidden;padding:.1em 0 .18em;margin:-.1em 0 -.18em;}
-.hero__title .l span{display:inline-block;transform:translateY(130%);animation:rise 1s var(--ease-out) forwards;}
-.hero__title .l:nth-child(2) span{animation-delay:.1s;}
-.hero__title .l:nth-child(3) span{animation-delay:.22s;}
-@keyframes rise{to{transform:translateY(0);}}
-/* "72H" = italic teal vivid, lisible */
-.hero__title .accent-72{
-  font-style:italic;font-family:var(--font-serif);font-weight:400;
-  color:var(--teal-vivid);
-  text-shadow:2px 2px 0 var(--teal-dark);
-}
-.hero__title .accent-72::after{content:"";display:block;height:.08em;background:var(--teal);transform-origin:left;animation:underline 1s var(--ease-out) .7s both;transform:scaleX(0);margin-top:.06em;}
-@keyframes underline{to{transform:scaleX(1);}}
-
-.hero__body{margin-top:36px;padding-top:32px;border-top:2.5px solid rgba(245,241,234,.1);}
-.hero__desc{font-size:1.08rem;line-height:1.65;color:rgba(245,241,234,.72);max-width:450px;margin-bottom:30px;}
-.hero__desc strong{color:var(--cream);font-weight:700;}
-.hero__actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:28px;}
-.hero__meta{display:flex;align-items:center;gap:10px;font-family:var(--font-mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.14em;color:var(--muted);}
-.hero__meta .live-dot{color:var(--teal);}
-
-/* Right: Organic teal frame with flat-lay illustration */
-.hero__right{position:relative;display:flex;align-items:center;justify-content:center;animation:floatin 1.3s var(--ease-out) .3s both;}
-@keyframes floatin{from{opacity:0;transform:translateY(32px);}to{opacity:1;transform:none;}}
-.hero__frame{
-  width:94%;aspect-ratio:1/1;max-width:520px;
-  background:var(--teal);
-  border-radius:67% 33% 55% 45%/56% 44% 56% 44%;
-  border:3px solid var(--ink);
-  box-shadow:8px 8px 0 var(--ink),16px 16px 0 rgba(13,144,144,.3);
-  display:flex;align-items:center;justify-content:center;
-  position:relative;overflow:hidden;
-  animation:morphblob 14s ease-in-out infinite;
-}
-.hero__frame svg{width:88%;height:auto;position:relative;z-index:2;}
-.hero__frame img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;}
-
-/* Floating Feastie-style stickers */
-.hero__sticker{position:absolute;z-index:10;}
-.hero__sticker--tl{top:-20px;right:10%;animation:floatA 4s ease-in-out infinite;}
-.hero__sticker--bl{bottom:30px;left:-20px;animation:floatB 5s ease-in-out infinite;}
-.hero__sticker--br{bottom:50px;right:-10px;animation:floatA 3.5s ease-in-out infinite .8s;}
-@keyframes floatA{0%,100%{transform:translateY(0);}50%{transform:translateY(-8px);}}
-@keyframes floatB{0%,100%{transform:translateY(0) rotate(-2deg);}50%{transform:translateY(-6px) rotate(-2deg);}}
-
-/* Feastie pill-stamp hybrid */
-.stamp-pill{
-  display:inline-flex;flex-direction:column;align-items:center;justify-content:center;
-  padding:14px 20px;border-radius:100px;
-  background:var(--cream);color:var(--ink);
-  border:3px solid var(--ink);
-  box-shadow:4px 4px 0 var(--ink);
-  font-family:var(--font-display);font-weight:800;text-align:center;
-  line-height:1.1;
-}
-.stamp-pill__big{font-size:1.8rem;letter-spacing:-.04em;color:var(--teal);
-  text-shadow:2px 2px 0 var(--teal-dark);}
-.stamp-pill__sub{font-family:var(--font-mono);font-size:.58rem;text-transform:uppercase;letter-spacing:.2em;color:var(--muted-2);margin-top:2px;}
-
-/* ══════════════════════════════════════════
-   PAIN — CREAM section, Feastie editorial
-══════════════════════════════════════════ */
-.pain{background:var(--cream);color:var(--ink);padding:100px 0;position:relative;overflow:hidden;}
-.pain::before{content:"";position:absolute;top:-80px;right:-80px;width:380px;height:380px;background:rgba(26,191,190,.14);border-radius:42% 58% 67% 33%/44% 56% 44% 56%;pointer-events:none;animation:morphblob 18s ease-in-out infinite;}
-.pain__top{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;margin-bottom:70px;}
-.pain__title{font-family:var(--font-display);font-weight:800;font-size:clamp(2.8rem,5.5vw,5.5rem);line-height:.9;letter-spacing:-.045em;}
-.pain__title em{font-style:italic;font-family:var(--font-serif);font-weight:400;color:var(--teal-dark);}
-.pain__right{display:flex;flex-direction:column;gap:20px;}
-/* Big italic pull-quote — Feastie style */
-.pull-quote{font-family:var(--font-serif);font-style:italic;font-size:clamp(1.3rem,2.2vw,1.8rem);line-height:1.45;color:var(--muted-2);padding-left:28px;border-left:4px solid var(--teal-dark);}
-.pull-quote strong{color:var(--ink);font-weight:400;}
-
-/* Pain items — horizontal editorial rows */
-.pain__items{border-top:2px solid rgba(0,0,0,.1);}
-.pain__item{display:grid;grid-template-columns:80px 1fr 1.3fr auto;gap:40px;align-items:center;padding:40px 0;border-bottom:2px solid rgba(0,0,0,.1);transition:padding-left .3s var(--ease-out);}
-.pain__item:hover{padding-left:16px;}
-.pain__num{font-family:var(--font-display);font-weight:800;font-size:4rem;line-height:1;letter-spacing:-.06em;color:rgba(10,14,15,.1);}
-.pain__item-title{font-family:var(--font-display);font-weight:800;font-size:clamp(1.4rem,2.2vw,2rem);line-height:1;letter-spacing:-.03em;}
-.pain__item-desc{font-size:.98rem;line-height:1.6;color:var(--muted-2);}
-/* Feastie tag — bold pill with thick border */
-.pain__tag{display:inline-flex;align-items:center;gap:8px;padding:10px 20px;background:var(--teal);color:var(--ink);border-radius:12px;border:2.5px solid var(--ink);box-shadow:3px 3px 0 var(--ink);font-family:var(--font-display);font-weight:800;font-size:.8rem;text-transform:uppercase;letter-spacing:.04em;width:fit-content;white-space:nowrap;}
-
-/* ══════════════════════════════════════════
-   PRICING — Dark, Feastie "menu" energy
-══════════════════════════════════════════ */
-.pricing-section{background:var(--ink);padding:100px 0;position:relative;overflow:hidden;}
-.pricing-section::before{content:"";position:absolute;left:-100px;bottom:-80px;width:440px;height:440px;background:rgba(26,191,190,.07);border-radius:58% 42% 44% 56%/50% 60% 40% 50%;pointer-events:none;animation:morphblob 20s ease-in-out infinite reverse;}
-.pricing__head{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:end;margin-bottom:64px;}
-.pricing__title{font-family:var(--font-display);font-weight:800;font-size:clamp(2.8rem,5.5vw,5.5rem);line-height:.9;letter-spacing:-.045em;}
-.pricing__title em{font-style:italic;font-family:var(--font-serif);font-weight:400;color:var(--teal);}
-.pricing__head-desc{font-size:1.05rem;line-height:1.65;color:rgba(245,241,234,.6);max-width:380px;}
-.pricing__head-desc strong{color:var(--cream);font-weight:600;}
-.pricing{display:grid;grid-template-columns:1fr 1.2fr 1fr;gap:16px;align-items:end;}
-/* 3D Feastie cards — thick border + flat shadow */
-.pcard{border-radius:24px;padding:40px 34px 34px;position:relative;display:flex;flex-direction:column;gap:16px;overflow:hidden;border:2.5px solid;transition:transform .4s var(--ease-out),box-shadow .4s var(--ease-out);}
-.pcard--side{background:var(--ink-2);color:var(--cream);border-color:rgba(245,241,234,.15);box-shadow:6px 6px 0 rgba(245,241,234,.08);}
-.pcard--side:hover{transform:translate(-2px,-4px);box-shadow:8px 10px 0 rgba(245,241,234,.1);}
-.pcard--hero{background:var(--teal);color:var(--ink);border-color:var(--ink);box-shadow:8px 8px 0 var(--ink);padding:52px 38px 42px;}
-.pcard--hero:hover{transform:translate(-3px,-6px);box-shadow:11px 14px 0 var(--ink);}
-.pcard__badge{position:absolute;top:18px;right:18px;}
-.pcard__name{font-family:var(--font-mono);font-weight:700;font-size:.8rem;letter-spacing:.2em;text-transform:uppercase;color:var(--teal);}
-.pcard--hero .pcard__name{color:var(--ink);opacity:.7;}
-.pcard__desc{font-size:.94rem;line-height:1.55;opacity:.65;min-height:46px;}
-.pcard__price{display:flex;align-items:baseline;gap:4px;padding:18px 0;border-top:1.5px dashed rgba(245,241,234,.15);border-bottom:1.5px dashed rgba(245,241,234,.15);margin:4px 0;}
-.pcard--hero .pcard__price{border-color:rgba(10,14,15,.2);}
-.pcard__price strong{font-family:var(--font-display);font-weight:800;font-size:4rem;line-height:1;letter-spacing:-.05em;}
-.pcard__price small{font-size:1.3rem;font-weight:700;opacity:.55;}
-.pcard__price .from{font-family:var(--font-mono);font-size:.62rem;text-transform:uppercase;letter-spacing:.12em;opacity:.4;margin-left:auto;align-self:center;}
-.pcard__features{list-style:none;display:flex;flex-direction:column;gap:11px;flex:1;}
-.pcard__features li{display:flex;align-items:flex-start;gap:10px;font-size:.92rem;line-height:1.4;}
-.pcard__features li::before{content:"";width:16px;height:16px;border-radius:50%;flex-shrink:0;margin-top:2px;
-  background:var(--teal) url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230A0E0F' stroke-width='3.5'><path d='M4 12l5 5L20 6'/></svg>") center/58% no-repeat;}
-.pcard--hero .pcard__features li::before{background-color:var(--ink);background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231ABFBE' stroke-width='3.5'><path d='M4 12l5 5L20 6'/></svg>");}
-/* 3D CTA on card */
-.pcard__cta{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 22px;border-radius:12px;font-weight:800;font-size:.9rem;font-family:var(--font-body);border:2.5px solid;transition:transform .12s,box-shadow .12s;}
-.pcard--side .pcard__cta{background:var(--teal);color:var(--ink);border-color:var(--ink);box-shadow:3px 3px 0 var(--ink);}
-.pcard--side .pcard__cta:hover{transform:translate(-1px,-1px);box-shadow:4px 4px 0 var(--ink);}
-.pcard--hero .pcard__cta{background:var(--ink);color:var(--cream);border-color:var(--cream);box-shadow:3px 3px 0 rgba(245,241,234,.4);}
-.pcard--hero .pcard__cta:hover{transform:translate(-1px,-1px);box-shadow:4px 4px 0 rgba(245,241,234,.4);}
-.pricing__foot{text-align:center;margin-top:32px;font-family:var(--font-mono);font-size:.78rem;letter-spacing:.06em;color:var(--muted);text-transform:uppercase;}
-.pricing__foot strong{color:var(--teal);}
-/* Photos sur les cartes */
-.pcard__photo{width:100%;height:200px;object-fit:contain;object-position:center center;background:var(--ink-3);border-radius:14px;margin-bottom:20px;}
-.pcard--hero .pcard__photo{width:100%;height:220px;object-fit:contain;object-position:center center;background:rgba(10,14,15,.25);border-radius:14px;margin-bottom:24px;}
-/* Options tarifaires */
-.pricing__options{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:24px;}
-.pricing__opt{background:rgba(245,241,234,.05);border:1.5px solid rgba(245,241,234,.12);border-radius:16px;padding:18px 22px;display:flex;align-items:center;gap:14px;}
-.pricing__opt-icon{font-size:1.4rem;flex-shrink:0;}
-.pricing__opt-label{font-family:var(--font-display);font-weight:700;font-size:.9rem;color:var(--cream);}
-.pricing__opt-sub{font-family:var(--font-mono);font-size:.68rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-top:2px;}
-.pricing__opt-price{margin-left:auto;font-family:var(--font-display);font-weight:800;font-size:1.1rem;color:var(--teal);white-space:nowrap;}
-/* FAQ */
-.faq{background:var(--cream);color:var(--ink);padding:100px 0;}
-.faq__head{text-align:center;margin-bottom:56px;}
-.faq__title{font-family:var(--font-display);font-weight:800;font-size:clamp(2.4rem,4.5vw,4.5rem);line-height:.9;letter-spacing:-.04em;margin-bottom:12px;}
-.faq__title em{font-style:italic;font-family:var(--font-serif);font-weight:400;color:var(--teal-dark);}
-.faq__list{max-width:780px;margin:0 auto;display:flex;flex-direction:column;gap:0;border:2.5px solid var(--ink);border-radius:20px;overflow:hidden;}
-.faq__item{border-bottom:2px solid rgba(10,14,15,.1);}
-.faq__item:last-child{border-bottom:0;}
-.faq__q{width:100%;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:22px 28px;font-family:var(--font-display);font-weight:700;font-size:1.05rem;cursor:pointer;background:transparent;text-align:left;transition:background .2s;}
-.faq__q:hover{background:rgba(26,191,190,.06);}
-.faq__q-icon{width:28px;height:28px;border-radius:50%;border:2px solid var(--ink);display:grid;place-items:center;flex-shrink:0;font-size:1.1rem;transition:transform .3s,background .2s;}
-.faq__item.open .faq__q-icon{transform:rotate(45deg);background:var(--teal);border-color:var(--teal);}
-.faq__a{max-height:0;overflow:hidden;transition:max-height .4s ease,padding .3s;}
-.faq__item.open .faq__a{max-height:400px;padding:0 28px 24px;}
-.faq__a p{font-size:.98rem;line-height:1.7;color:rgba(10,14,15,.7);}
-.faq__a strong{color:var(--ink);}
-.faq__a .faq__tag{display:inline-flex;align-items:center;gap:6px;margin-top:12px;padding:7px 16px;background:var(--teal);color:var(--ink);border-radius:100px;font-family:var(--font-display);font-weight:800;font-size:.75rem;text-transform:uppercase;border:2px solid var(--ink);}
-
-/* ══════════════════════════════════════════
-   PROCESS — Cream bg, cookbook style
-══════════════════════════════════════════ */
-.process{background:var(--cream);color:var(--ink);padding:100px 0;position:relative;overflow:hidden;}
-.process::after{content:"";position:absolute;right:-60px;bottom:-60px;width:340px;height:340px;background:rgba(26,191,190,.1);border-radius:58% 42% 33% 67%/50% 60% 40% 50%;pointer-events:none;animation:morphblob 16s ease-in-out infinite;}
-.process__head{text-align:center;margin-bottom:64px;}
-.process__title{font-family:var(--font-display);font-weight:800;font-size:clamp(2.8rem,5.5vw,5.5rem);line-height:.9;letter-spacing:-.045em;}
-.process__title em{font-style:italic;font-family:var(--font-serif);font-weight:400;color:var(--teal-dark);}
-.process__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:2.5px solid rgba(0,0,0,.12);border-radius:24px;overflow:hidden;}
-.process__step{background:var(--cream);padding:50px 42px;border-right:2px solid rgba(0,0,0,.1);position:relative;transition:background .4s;}
-.process__step:last-child{border-right:0;}
-.process__step:hover{background:var(--cream-2);}
-/* Feastie-style big number */
-.step-num{font-family:var(--font-display);font-weight:800;font-size:7rem;line-height:.85;letter-spacing:-.07em;color:rgba(26,191,190,.2);margin-bottom:20px;transition:color .4s;}
-.process__step:hover .step-num{color:rgba(26,191,190,.4);}
-.step-label{font-family:var(--font-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.18em;color:var(--teal-dark);margin-bottom:10px;}
-.process__step h3{font-family:var(--font-display);font-weight:800;font-size:clamp(1.5rem,2.3vw,2rem);line-height:1.05;letter-spacing:-.03em;margin-bottom:14px;}
-.process__step p{color:var(--muted-2);font-size:.95rem;line-height:1.6;margin-bottom:20px;}
-.step-footer{display:inline-flex;align-items:center;gap:8px;font-family:var(--font-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.14em;color:var(--muted-2);}
-.step-footer::before{content:"→";color:var(--teal-dark);font-size:.85rem;}
-
-/* ══════════════════════════════════════════
-   STATS
-══════════════════════════════════════════ */
-.stats-band{background:var(--ink);}
-.stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:2px solid rgba(245,241,234,.08);border-bottom:2px solid rgba(245,241,234,.08);}
-.stat{padding:52px 32px;border-right:2px solid rgba(245,241,234,.08);}
-.stat:last-child{border-right:0;}
-.stat__num{font-family:var(--font-display);font-weight:800;font-size:clamp(3rem,6vw,5.5rem);line-height:.88;letter-spacing:-.045em;color:var(--white);}
-.stat__num em{font-style:italic;font-family:var(--font-serif);font-weight:400;color:var(--teal-vivid);}
-.stat__label{font-family:var(--font-mono);font-size:.74rem;text-transform:uppercase;letter-spacing:.14em;color:var(--muted);margin-top:14px;max-width:180px;line-height:1.4;}
-
-/* ══════════════════════════════════════════
-   WHY — Dark, organic photo frame
-══════════════════════════════════════════ */
-.why{background:var(--ink);padding:100px 0;overflow:hidden;position:relative;}
-.why::before{content:"";position:absolute;top:0;left:-80px;width:440px;height:440px;background:rgba(26,191,190,.06);border-radius:67% 33% 52% 48%/44% 62% 38% 56%;pointer-events:none;animation:morphblob 22s ease-in-out infinite;}
-.why__grid{display:grid;grid-template-columns:1fr 1.1fr;gap:90px;align-items:start;position:relative;z-index:2;}
-/* Organic frame — Feastie style with thick border */
-.why__frame-col{position:sticky;top:110px;}
-.why__frame{
-  aspect-ratio:4/5;position:relative;
-  background:var(--teal);
-  border-radius:64% 36% 55% 45%/58% 44% 56% 42%;
-  overflow:hidden;
-  border:3px solid var(--ink);
-  box-shadow:8px 8px 0 var(--ink);
-  animation:morphblob 14s ease-in-out infinite;
-}
-.why__frame img{width:100%;height:100%;object-fit:cover;}
-.why__frame-label{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);white-space:nowrap;}
-/* Pull-quote */
-.why__pull{font-family:var(--font-serif);font-style:italic;font-size:clamp(1.3rem,2.2vw,2rem);line-height:1.45;color:rgba(245,241,234,.45);margin-bottom:32px;padding-bottom:32px;border-bottom:2px solid var(--line-light);}
-.why__pull strong{color:var(--cream);font-weight:400;}
-.why h2{font-family:var(--font-display);font-weight:800;font-size:clamp(2.6rem,4.8vw,4.8rem);line-height:.9;letter-spacing:-.045em;margin-bottom:24px;}
-.why h2 em{font-style:italic;font-family:var(--font-serif);font-weight:400;color:var(--teal);}
-.why__lead{font-size:1.05rem;line-height:1.65;color:rgba(245,241,234,.7);margin-bottom:44px;}
-.why__lead strong{color:var(--cream);font-weight:700;}
-.why__points{border-top:2px solid var(--line-light);margin-bottom:44px;}
-.why__point{padding:24px 0;border-bottom:2px solid var(--line-light);display:grid;grid-template-columns:40px 1fr auto;gap:18px;align-items:start;transition:padding-left .4s var(--ease-out);}
-.why__point:hover{padding-left:10px;}
-.why__point__num{font-family:var(--font-mono);font-size:.7rem;color:var(--teal);letter-spacing:.1em;padding-top:4px;}
-.why__point h4{font-family:var(--font-display);font-weight:700;font-size:1.2rem;letter-spacing:-.01em;margin-bottom:4px;}
-.why__point p{color:rgba(245,241,234,.6);font-size:.92rem;line-height:1.5;}
-.why__point__arr{font-size:.95rem;opacity:0;transform:translateX(-8px);transition:opacity .3s,transform .3s;color:var(--teal);align-self:center;}
-.why__point:hover .why__point__arr{opacity:1;transform:translateX(0);}
-
-/* ══════════════════════════════════════════
-   TEMOS — Cream
-══════════════════════════════════════════ */
-.temo{background:var(--cream);color:var(--ink);padding:100px 0;}
-.temo__head{text-align:center;margin-bottom:56px;}
-.temo__title{font-family:var(--font-display);font-weight:800;font-size:clamp(2.4rem,4.5vw,4.5rem);line-height:.9;letter-spacing:-.04em;}
-.temo__title em{font-style:italic;font-family:var(--font-serif);font-weight:400;color:var(--teal-dark);}
-.temo__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
-.temo__card{background:var(--ink);color:var(--cream);border-radius:20px;padding:32px 28px;display:flex;flex-direction:column;gap:16px;border:2.5px solid var(--ink);box-shadow:5px 5px 0 var(--ink);transition:transform .4s var(--ease-out),box-shadow .4s var(--ease-out);}
-.temo__card:hover{transform:translate(-2px,-4px);box-shadow:7px 9px 0 var(--ink);}
-.temo__stars{color:var(--teal);letter-spacing:2px;font-size:.95rem;}
-.temo__text{font-family:var(--font-serif);font-style:italic;font-size:1.02rem;line-height:1.65;color:rgba(245,241,234,.85);flex:1;}
-.temo__author{display:flex;align-items:center;gap:12px;}
-.temo__avatar{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--teal-light),var(--teal-dark));display:grid;place-items:center;font-family:var(--font-display);font-weight:800;color:var(--ink);font-size:.9rem;flex-shrink:0;border:2px solid var(--ink);overflow:hidden;}
-.temo__avatar img{width:100%;height:100%;object-fit:cover;}
-.temo__google-badge{display:inline-flex;align-items:center;gap:10px;margin-top:14px;}
-.temo__google-badge img{height:28px;width:auto;}
-.pain__visual{border-radius:20px;overflow:hidden;border:2.5px solid var(--ink);box-shadow:6px 6px 0 var(--ink);position:relative;}
-.pain__visual img{width:100%;display:block;aspect-ratio:4/3;object-fit:cover;}
-.pain__visual-label{position:absolute;bottom:12px;left:12px;background:var(--ink);color:var(--cream);font-family:var(--font-mono);font-size:.65rem;text-transform:uppercase;letter-spacing:.12em;padding:6px 12px;border-radius:8px;}
-.process__step-img{width:56px;height:56px;border-radius:14px;object-fit:cover;border:2px solid rgba(13,144,144,.4);margin-bottom:18px;}
-.temo__author-info strong{display:block;font-weight:700;font-size:.9rem;}
-.temo__author-info span{font-family:var(--font-mono);font-size:.68rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);}
-
-/* ══════════════════════════════════════════
-   CTA BANNER — Full teal, Feastie max energy
-══════════════════════════════════════════ */
-.cta-banner{background:var(--teal);color:var(--ink);padding:120px 0;position:relative;overflow:hidden;}
-.cta-banner::before{content:"";position:absolute;top:-80px;right:-80px;width:440px;height:440px;background:rgba(255,255,255,.12);border-radius:67% 33% 52% 48%/56% 44% 56% 44%;pointer-events:none;animation:morphblob 18s ease-in-out infinite;}
-.cta-banner::after{content:"";position:absolute;bottom:-50px;left:-50px;width:320px;height:320px;background:rgba(10,14,15,.08);border-radius:42% 58% 67% 33%/50% 40% 60% 50%;pointer-events:none;animation:morphblob 22s ease-in-out infinite reverse;}
-.cta-banner__inner{position:relative;z-index:2;text-align:center;}
-.cta-banner__eyebrow{margin-bottom:24px;}
-.cta-banner h2{font-family:var(--font-display);font-weight:800;font-size:clamp(3rem,9vw,9.5rem);line-height:.86;letter-spacing:-.05em;margin-bottom:44px;}
-/* 3D extruded ink text on teal */
-.cta-banner h2 .cta-main{color:var(--ink);text-shadow:4px 4px 0 rgba(10,14,15,.18),8px 8px 0 rgba(10,14,15,.08);}
-.cta-banner h2 em{font-style:italic;font-family:var(--font-serif);font-weight:400;color:var(--ink);opacity:.7;}
-.cta-banner__actions{display:inline-flex;gap:14px;flex-wrap:wrap;justify-content:center;}
-
-/* ══════════════════════════════════════════
-   FOOTER
-══════════════════════════════════════════ */
-.footer{background:var(--ink);color:var(--cream);padding:90px 0 36px;overflow:hidden;}
-.footer__grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:56px;padding-bottom:70px;border-bottom:2px solid var(--line-light);}
-.footer__brand .logo{display:flex;align-items:center;gap:12px;font-family:var(--font-display);font-weight:800;font-size:1.1rem;margin-bottom:16px;}
-.footer__brand .logo img{width:32px;height:32px;border-radius:8px;}
-.footer__brand .logo strong{color:var(--teal);}
-.footer__brand p{color:var(--muted);max-width:300px;font-size:.92rem;line-height:1.55;}
-.footer__col h5{font-family:var(--font-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.16em;color:var(--muted);margin-bottom:18px;font-weight:500;}
-.footer__col ul{list-style:none;display:flex;flex-direction:column;gap:10px;}
-.footer__col a{opacity:.6;font-size:.92rem;transition:opacity .3s;}
-.footer__col a:hover{opacity:1;}
-.footer__bottom{display:flex;justify-content:space-between;align-items:center;padding-top:28px;font-family:var(--font-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:var(--muted-2);}
-/* Feastie-style giant outline footer text */
-.footer__giant{font-family:var(--font-display);font-weight:800;font-size:clamp(5rem,16vw,16rem);line-height:.82;letter-spacing:-.06em;text-align:center;margin-top:56px;user-select:none;-webkit-text-stroke:1.5px rgba(245,241,234,.1);color:transparent;}
-.footer__giant em{font-family:var(--font-serif);font-style:italic;-webkit-text-stroke:0;color:rgba(26,191,190,.25);}
-
-/* ── WAVE SVG ── */
-.wave-to-ink svg path{fill:var(--ink);}
-.wave-to-cream svg path{fill:var(--cream);}
-.wave-to-teal svg path{fill:var(--teal);}
-
-/* ── MOBILE ── */
-.nav__mobile{display:none;position:fixed;inset:0;z-index:40;background:var(--ink-2);flex-direction:column;align-items:center;justify-content:center;gap:32px;font-family:var(--font-display);font-size:1.8rem;font-weight:800;opacity:0;pointer-events:none;transition:opacity .4s;}
-.nav__mobile.open{display:flex;opacity:1;pointer-events:all;}
-@media(max-width:900px){
-  .nav__links,.nav__cta{display:none;}
-  .nav__burger{display:flex;}
-  .container{padding:0 20px;}
-  .hero__grid,.pain__top,.pricing,.process__grid,.why__grid,.temo__grid,.footer__grid,.pricing__head{grid-template-columns:1fr;}
-  .pricing__options{grid-template-columns:1fr;}
-  .pain__item{grid-template-columns:1fr;gap:12px;}
-  .pain__num{display:none;}
-  .stats{grid-template-columns:repeat(2,1fr);}
-  .stat{padding:20px 12px;}
-  .stat__num{font-size:clamp(1.6rem,7vw,2.4rem);}
-  .why__frame-col{position:relative;top:auto;margin-bottom:40px;}
-  .section{padding:70px 0;}
-  .marquee{display:none;}
-}
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Studio Boost 46 — Votre site web en 72H chrono.</title>
+<meta name="description" content="Sites web livrés en 72H chrono pour artisans, commerçants et entrepreneurs du Lot. À partir de 290€. Souillac (46)." />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+<link rel="stylesheet" href="style.css" />
+<style>
+.hero{position:relative;padding:30px 0 90px;overflow:hidden}
+.hero__wordmark{font-family:var(--font-display);font-weight:800;font-size:clamp(6rem,23vw,23rem);line-height:.8;letter-spacing:-.02em;color:var(--pink);text-shadow:var(--extrude-ink);-webkit-text-stroke:3px var(--ink);text-align:center;margin:10px 0 0;user-select:none}
+.hero__wordmark span{display:inline-block;animation:pop-letter .7s var(--pop) both}
+.hero__lower{display:grid;grid-template-columns:1.15fr 1fr;gap:60px;align-items:center;margin-top:40px}
+.hero__stack{display:flex;flex-direction:column;align-items:flex-start;gap:10px;font-size:clamp(2.4rem,5vw,4.4rem)}
+.hero__stack .row{display:flex;align-items:center;gap:16px}
+.hero__stack .sticker{animation:pop-letter .6s var(--pop) both}
+.hero__stack .r1{transform:rotate(-3deg)}.hero__stack .r2{transform:rotate(2deg)}.hero__stack .r3{transform:rotate(-1.5deg)}
+@keyframes pop-letter{from{opacity:0;transform:translateY(40px) scale(.7)}to{opacity:1}}
+.hero__tagline{font-family:var(--font-display);font-weight:700;font-size:1.5rem;color:var(--ink);margin:26px 0 8px}
+.hero__desc{max-width:440px;font-size:1.05rem;color:var(--ink);font-weight:500;margin-bottom:30px;line-height:1.5}
+.hero__desc strong{font-weight:800}
+.hero__actions{display:flex;gap:14px;flex-wrap:wrap}
+.hero__art{position:relative;height:100%;min-height:440px}
+.hero__blob{position:absolute;border-radius:50%}
+.hero__blob.b1{width:300px;height:300px;background:var(--lime);right:120px;top:0}
+.hero__blob.b2{width:240px;height:240px;background:var(--red);left:0;bottom:20px}
+.hero__photo{position:absolute;border:3px solid var(--ink);overflow:hidden;background:#ddd;box-shadow:var(--shadow-card)}
+.hero__photo.p1{width:280px;aspect-ratio:4/5;right:60px;top:30px;border-radius:140px 140px 22px 22px;transform:rotate(2deg)}
+.hero__photo.p2{width:200px;aspect-ratio:1;left:10px;bottom:0;border-radius:22px;transform:rotate(-4deg)}
+.hero__photo img{width:100%;height:100%;object-fit:cover}
+.h72{position:absolute;left:140px;top:-10px;z-index:3;background:var(--yellow);color:var(--ink);border:3px solid var(--ink);border-radius:18px;padding:14px 18px;box-shadow:4px 5px 0 var(--ink);transform:rotate(-5deg);animation:wobble 4s ease-in-out infinite}
+@keyframes wobble{0%,100%{transform:rotate(-5deg)}50%{transform:rotate(-2deg)}}
+.h72__label{font-family:var(--font-display);font-weight:700;font-size:.66rem;text-transform:uppercase;letter-spacing:.1em;opacity:.7}
+.h72__time{font-family:var(--font-display);font-weight:800;font-size:2rem;line-height:1;font-variant-numeric:tabular-nums}
+.h72__time .sep{animation:blink 1s infinite}
+@keyframes blink{50%{opacity:.25}}
+.geo-badge{position:absolute;right:-6px;bottom:60px;z-index:3;background:#fff;border:3px solid var(--ink);border-radius:100px;padding:9px 16px;display:inline-flex;align-items:center;gap:9px;font-family:var(--font-display);font-weight:700;font-size:.8rem;text-transform:uppercase;letter-spacing:.04em;box-shadow:3px 3px 0 var(--ink);transform:rotate(4deg)}
+.geo-badge .dot{width:9px;height:9px;border-radius:50%;background:var(--red)}
+@media (max-width:1000px){.hero__lower{grid-template-columns:1fr;gap:30px}.hero__art{display:none}}
+</style>
 </head>
-<body>
-
+<body data-screen-label="Accueil">
 <div class="cursor" id="cursor"></div>
 
-<!-- NAV -->
-<nav class="nav is-scrolled" id="nav">
+<div class="topbar"><div class="topbar__track">
+  <span>LIVRAISON EN 72H CHRONO <i class="spark">✦</i> À PARTIR DE 290€ <i class="spark">✦</i> SOUILLAC · LOT 46 <i class="spark">✦</i> RÉPONSE EN 24H <i class="spark">✦</i> SANS BLABLA <i class="spark">✦</i></span>
+  <span aria-hidden="true">LIVRAISON EN 72H CHRONO <i class="spark">✦</i> À PARTIR DE 290€ <i class="spark">✦</i> SOUILLAC · LOT 46 <i class="spark">✦</i> RÉPONSE EN 24H <i class="spark">✦</i> SANS BLABLA <i class="spark">✦</i></span>
+</div></div>
+
+<nav class="nav" id="nav">
   <div class="container nav__inner">
-    <a href="index.html" class="nav__logo">
-      <img src="images/logo.webp" alt="Studio Boost 46" onerror="this.style.display='none'"/>
-      Studio Boost <strong>46</strong>
-    </a>
-    <ul class="nav__links">
-      <li><a href="index.html" class="active">Accueil</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="projets.html">Projets</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <a href="contact.html" class="nav__cta" data-magnetic="">Démarrer →</a>
-    <button class="nav__burger"><span></span><span></span><span></span></button>
+    <a href="index.html" class="nav__logo"><img src="images/logo.png" alt="" />Studio Boost <strong>46</strong></a>
+    <div class="nav__meta"><span>Souillac · 46</span><span>Réponse 24H</span></div>
+    <div class="nav__links">
+      <a href="index.html" class="active">Accueil</a>
+      <a href="services.html">Services</a>
+      <a href="projets.html">Projets</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <a href="contact.html" class="nav__cta" data-magnetic>Démarrer →</a>
+    <button class="nav__burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
 </nav>
-<nav class="nav__mobile">
-  <a href="index.html">Accueil</a><a href="services.html">Services</a>
-  <a href="projets.html">Projets</a><a href="contact.html">Contact</a>
-  <a href="contact.html" class="btn btn--teal btn--lg">Démarrer →</a>
-</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" class="active">Accueil</a>
+  <a href="services.html">Services</a>
+  <a href="projets.html">Projets</a>
+  <a href="contact.html">Contact</a>
+  <div class="mm-cta"><a href="contact.html" class="btn btn--pink">Démarrer mon projet →</a></div>
+  <div class="mm-foot"><span>Souillac (46200) · Lot</span><span>Réponse en 24H · Livraison 72H</span></div>
+</div>
 
-<!-- ══ HERO ══ -->
 <section class="hero">
-  <div class="morph-blob hero__blob-1"></div>
-  <div class="morph-blob hero__blob-2"></div>
   <div class="container">
-    <div class="hero__grid">
-
-      <div>
-        <div style="margin-bottom:30px;">
-          <div class="label-badge label-badge--outline"><span class="live-dot" style="color:var(--teal);"></span>En ligne · Souillac (46)</div>
+    <div class="hero__wordmark" id="wordmark" aria-label="Boost">BOOST</div>
+    <div class="hero__lower">
+      <div class="hero__left">
+        <div class="hero__stack">
+          <div class="row r1"><span class="sticker st-lime" style="animation-delay:.1s">Votre site</span></div>
+          <div class="row r2"><span class="sticker st-red" style="animation-delay:.2s">web en 72H</span></div>
+          <div class="row r3"><span class="sticker st-pink" style="animation-delay:.3s">chrono.</span></div>
         </div>
-
-        <h1 class="hero__title">
-          <span class="l"><span>Votre site</span></span>
-          <span class="l"><span>web livré</span></span>
-          <span class="l"><span>en <span class="accent-72">72H.</span></span></span>
-        </h1>
-
-        <div class="hero__body">
-          <p class="hero__desc">Je crée des sites <strong>simples, rapides, sans blabla</strong> pour les artisans, commerçants et entrepreneurs du Lot. Pas d'agence. Juste un site qui vous ramène des clients.</p>
-          <div class="hero__actions">
-            <a href="contact.html" class="btn btn--teal btn--lg" data-magnetic="">Je veux mon site →</a>
-            <a href="services.html" class="btn btn--outline btn--lg">Voir les tarifs</a>
-          </div>
-          <div class="hero__meta">
-            <span class="live-dot"></span>★ 5/5 Google · 100% satisfaction · Sans engagement
-          </div>
+        <p class="hero__tagline">Simple. Efficace. Sans blabla.</p>
+        <p class="hero__desc">Je crée des sites web qui claquent pour les <strong>artisans, commerçants et entrepreneurs</strong> du Lot. Pas d'agence, pas de chichi — juste un site qui vous ramène des clients.</p>
+        <div class="hero__actions">
+          <a href="contact.html" class="btn btn--pink" data-magnetic>Je veux mon site <span class="arrow">→</span></a>
+          <a href="services.html" class="btn btn--cream">Voir les tarifs</a>
         </div>
       </div>
-
-      <div class="hero__right">
-        <!-- Floating stickers -->
-        <div class="hero__sticker hero__sticker--tl">
-          <div class="stamp-pill">
-            <div class="stamp-pill__big">72H</div>
-            <div class="stamp-pill__sub">chrono</div>
-          </div>
+      <div class="hero__art">
+        <div class="hero__blob b1"></div>
+        <div class="hero__blob b2"></div>
+        <div class="hero__photo p2"><img src="images/equipe.png" alt="" /></div>
+        <div class="hero__photo p1"><img src="images/hero.png" alt="Barbara — Studio Boost 46" /></div>
+        <div class="h72">
+          <div class="h72__label">Livraison dans</div>
+          <div class="h72__time" id="ticker">71<span class="sep">:</span>59<span class="sep">:</span>43</div>
         </div>
-        <div class="hero__sticker hero__sticker--bl">
-          <div class="label-badge label-badge--cream" style="transform:rotate(-2deg);">dès 290€</div>
-        </div>
-        <div class="hero__sticker hero__sticker--br">
-          <div class="label-badge label-badge--teal" style="transform:rotate(1.5deg);font-size:.72rem;">★★★★★ Google</div>
-        </div>
-
-        <!-- Organic frame: hero photo -->
-        <div class="hero__frame">
-          <img src="images/hero.webp" alt="Barbara — Studio Boost 46" />
-        </div>
-
+        <div class="geo-badge"><span class="dot"></span>Basée à Souillac</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ══ MARQUEE — teal bg, Feastie energy ══ -->
-<div class="marquee">
-  <div class="marquee__track">
-    <span>SIMPLE.<span class="marquee__dot"></span>EFFICACE.<span class="marquee__dot"></span>SANS <em>blabla.</em><span class="marquee__dot"></span>72H CHRONO<span class="marquee__dot"></span>À PARTIR DE <em>290€</em><span class="marquee__dot"></span>SOUILLAC · LOT 46<span class="marquee__dot"></span></span>
-    <span aria-hidden="true">SIMPLE.<span class="marquee__dot"></span>EFFICACE.<span class="marquee__dot"></span>SANS <em>blabla.</em><span class="marquee__dot"></span>72H CHRONO<span class="marquee__dot"></span>À PARTIR DE <em>290€</em><span class="marquee__dot"></span>SOUILLAC · LOT 46<span class="marquee__dot"></span></span>
-  </div>
-</div>
+<div class="ribbon"><div class="ribbon__track">
+  <span>SIMPLE <span class="dot"></span> EFFICACE <span class="dot"></span> SANS <em>BLABLA</em> <span class="dot"></span> 72H CHRONO <span class="dot"></span> DÈS <em>290€</em> <span class="dot"></span></span>
+  <span aria-hidden="true">SIMPLE <span class="dot"></span> EFFICACE <span class="dot"></span> SANS <em>BLABLA</em> <span class="dot"></span> 72H CHRONO <span class="dot"></span> DÈS <em>290€</em> <span class="dot"></span></span>
+</div></div>
 
-<!-- ══ PAIN — cream ══ -->
-<section class="pain" id="pain">
+<section class="section">
   <div class="container">
-    <div class="pain__top reveal">
-      <div>
-        <h2 class="pain__title">Ces problèmes<br>vous <em>parlent ?</em></h2>
+    <div class="sec-head reveal">
+      <div class="kicker">
+        <div class="row"><span class="sticker st-blue" style="transform:rotate(-3deg)">Ça vous</span></div>
+        <div class="row"><span class="sticker st-pink" style="transform:rotate(1.5deg)">parle ?</span></div>
       </div>
-      <div class="pain__right">
-        <div class="pain__visual reveal">
-          <svg viewBox="0 0 480 360" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block;">
-            <!-- BG -->
-            <rect width="480" height="360" fill="#0A0E0F"/>
-            <!-- Browser chrome -->
-            <rect x="0" y="0" width="480" height="38" fill="#10171A"/>
-            <circle cx="20" cy="19" r="7" fill="rgba(245,241,234,0.12)"/>
-            <circle cx="42" cy="19" r="7" fill="rgba(245,241,234,0.08)"/>
-            <circle cx="64" cy="19" r="7" fill="rgba(245,241,234,0.06)"/>
-            <rect x="96" y="10" width="220" height="18" rx="9" fill="rgba(245,241,234,0.06)"/>
-            <text x="206" y="23" fill="rgba(245,241,234,0.25)" font-size="9" text-anchor="middle" font-family="monospace">monsite.fr</text>
-            <!-- Divider -->
-            <line x1="0" y1="38" x2="480" y2="38" stroke="rgba(245,241,234,0.06)" stroke-width="1"/>
-
-            <!-- Left col: 2 stat cards stacked -->
-            <!-- Card 1: Visiteurs -->
-            <rect x="24" y="58" width="200" height="88" rx="12" fill="#10171A" stroke="rgba(245,241,234,0.08)" stroke-width="1.5"/>
-            <text x="44" y="82" fill="rgba(245,241,234,0.4)" font-size="10" font-family="Arial" font-weight="600">VISITEURS / MOIS</text>
-            <text x="44" y="118" fill="#F5F1EA" font-size="36" font-family="Arial" font-weight="800">3</text>
-            <!-- Tiny red arrow down -->
-            <polyline points="160,88 172,100 184,88" stroke="#E05252" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-            <line x1="172" y1="72" x2="172" y2="100" stroke="#E05252" stroke-width="2.5" stroke-linecap="round"/>
-            <text x="44" y="136" fill="rgba(245,241,234,0.2)" font-size="9" font-family="Arial">−87% vs mois dernier</text>
-
-            <!-- Card 2: Appels -->
-            <rect x="24" y="158" width="200" height="88" rx="12" fill="#10171A" stroke="rgba(245,241,234,0.08)" stroke-width="1.5"/>
-            <text x="44" y="182" fill="rgba(245,241,234,0.4)" font-size="10" font-family="Arial" font-weight="600">APPELS REÇUS</text>
-            <text x="44" y="218" fill="#F5F1EA" font-size="36" font-family="Arial" font-weight="800">0</text>
-            <polyline points="160,188 172,200 184,188" stroke="#E05252" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-            <line x1="172" y1="172" x2="172" y2="200" stroke="#E05252" stroke-width="2.5" stroke-linecap="round"/>
-            <text x="44" y="236" fill="rgba(245,241,234,0.2)" font-size="9" font-family="Arial">Ce mois-ci</text>
-
-            <!-- Card 3: Google position -->
-            <rect x="24" y="258" width="200" height="80" rx="12" fill="#10171A" stroke="rgba(245,241,234,0.08)" stroke-width="1.5"/>
-            <text x="44" y="282" fill="rgba(245,241,234,0.4)" font-size="10" font-family="Arial" font-weight="600">POSITION GOOGLE</text>
-            <text x="44" y="322" fill="#F5F1EA" font-size="36" font-family="Arial" font-weight="800">&gt;100</text>
-
-            <!-- Right col: graph -->
-            <rect x="244" y="58" width="212" height="280" rx="12" fill="#10171A" stroke="rgba(245,241,234,0.08)" stroke-width="1.5"/>
-            <text x="264" y="84" fill="rgba(245,241,234,0.4)" font-size="10" font-family="Arial" font-weight="600">TRAFIC ANNUEL</text>
-            <!-- Graph bars (declining) -->
-            <rect x="268" y="152" width="22" height="110" rx="4" fill="rgba(245,241,234,0.12)"/>
-            <rect x="298" y="172" width="22" height="90" rx="4" fill="rgba(245,241,234,0.1)"/>
-            <rect x="328" y="196" width="22" height="66" rx="4" fill="rgba(245,241,234,0.09)"/>
-            <rect x="358" y="214" width="22" height="48" rx="4" fill="rgba(245,241,234,0.08)"/>
-            <rect x="388" y="234" width="22" height="28" rx="4" fill="#E05252" opacity="0.7"/>
-            <!-- X labels -->
-            <text x="279" y="278" fill="rgba(245,241,234,0.2)" font-size="8" text-anchor="middle" font-family="Arial">J</text>
-            <text x="309" y="278" fill="rgba(245,241,234,0.2)" font-size="8" text-anchor="middle" font-family="Arial">F</text>
-            <text x="339" y="278" fill="rgba(245,241,234,0.2)" font-size="8" text-anchor="middle" font-family="Arial">M</text>
-            <text x="369" y="278" fill="rgba(245,241,234,0.2)" font-size="8" text-anchor="middle" font-family="Arial">A</text>
-            <text x="399" y="278" fill="#E05252" font-size="8" font-weight="bold" text-anchor="middle" font-family="Arial">M</text>
-            <!-- Trend line -->
-            <polyline points="279,197 309,212 339,229 369,238 399,248" stroke="#E05252" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke-dasharray="5,3" opacity="0.8"/>
-            <!-- Bottom label -->
-            <text x="350" y="310" fill="rgba(245,241,234,0.18)" font-size="9" text-anchor="middle" font-family="Arial">Votre site ne rapporte rien.</text>
-            <text x="350" y="326" fill="rgba(26,191,190,0.5)" font-size="9" text-anchor="middle" font-family="Arial" font-weight="600">Studio Boost 46 règle ça →</text>
-          </svg>
-        </div>
-        <p class="pull-quote">« Chaque jour sans site, c'est un client de <strong>perdu.</strong> Pas dramatique — juste <strong>vrai.</strong> »</p>
-        <div class="label-badge label-badge--teal" style="width:fit-content;">Studio Boost 46 règle ça →</div>
-      </div>
+      <p class="sec-head__sub">Pas de panique. C'est exactement pour ça que je suis là.</p>
     </div>
-    <div class="pain__items">
-      <div class="pain__item reveal">
-        <div class="pain__num">01</div>
-        <h3 class="pain__item-title">Invisible sur Google.</h3>
-        <p class="pain__item-desc">Sans site, vos concurrents raflent les clients qui vous cherchent. Chaque jour, des opportunités passent à côté.</p>
-        <div class="pain__tag">✓ Visible dès le J1</div>
+    <div class="pain__grid">
+      <div class="pcard reveal">
+        <div class="pcard__img"><img src="images/google.png" alt="" /><span class="pcard__tag">/01</span></div>
+        <div class="pcard__body"><h3>Invisible sur Google.</h3><p>Sans site, vos concurrents raflent les clients qui vous cherchent. Chaque jour, des opportunités passent à côté.</p><span class="pcard__sol">→ Visible dès le J1</span></div>
       </div>
-      <div class="pain__item reveal">
-        <div class="pain__num">02</div>
-        <h3 class="pain__item-title">Pas le temps de gérer ça.</h3>
-        <p class="pain__item-desc">Entre votre activité et le quotidien, créer un site passe toujours après. Je prends tout en charge.</p>
-        <div class="pain__tag">✓ Clés en main · 72H</div>
+      <div class="pcard reveal reveal-d2">
+        <div class="pcard__img"><img src="images/temps.png" alt="" /><span class="pcard__tag">/02</span></div>
+        <div class="pcard__body"><h3>Pas le temps.</h3><p>Entre votre activité, vos clients et le quotidien, créer un site passe toujours après. Je prends tout en charge.</p><span class="pcard__sol">→ Clés en main, 72H</span></div>
       </div>
-      <div class="pain__item reveal">
-        <div class="pain__num">03</div>
-        <h3 class="pain__item-title">Un site vieillissant.</h3>
-        <p class="pain__item-desc">Pas mobile, sans formulaire, photos floues — les visiteurs partent avant de vous contacter.</p>
-        <div class="pain__tag">✓ Refonte qui convertit</div>
-      </div>
-      <div class="pain__item reveal">
-        <div class="pain__num">04</div>
-        <h3 class="pain__item-title">Pas de belles photos.</h3>
-        <p class="pain__item-desc">Un site sans photos professionnelles, ça ne vend pas. Je me déplace faire votre séance (jusqu'à 30 km autour de Souillac).</p>
-        <div class="pain__tag">📸 Séance photo · 150€</div>
-      </div>
-      <div class="pain__item reveal">
-        <div class="pain__num">05</div>
-        <h3 class="pain__item-title">Modifier son site — impossible.</h3>
-        <p class="pain__item-desc">Changer un texte, ajouter une photo… sans savoir coder, c'est le blocage assuré. Je le fais pour vous, chaque mois.</p>
-        <div class="pain__tag">🧘 Mode Zen · 29€/mois</div>
+      <div class="pcard reveal reveal-d3">
+        <div class="pcard__img"><img src="images/site-nul.png" alt="" /><span class="pcard__tag">/03</span></div>
+        <div class="pcard__body"><h3>Un site qui dort.</h3><p>Vieillissant, pas mobile, sans formulaire — les visiteurs partent. Un site qui dort, c'est un site qui ne sert à rien.</p><span class="pcard__sol">→ Refonte qui convertit</span></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Wave ink -->
-<div class="wave wave-to-ink" style="background:var(--cream);">
-  <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,30 C240,80 480,0 720,40 C960,80 1200,10 1440,45 L1440,80 L0,80 Z"/></svg>
-</div>
-
-<!-- ══ PRICING — dark ══ -->
-<section class="pricing-section" id="services">
+<section class="section section--lime">
   <div class="container">
-    <div class="pricing__head reveal">
-      <div>
-        <div class="label-badge label-badge--outline" style="margin-bottom:22px;">Nos formules</div>
-        <h2 class="pricing__title">Trois offres.<br>Aucune <em>mauvaise surprise.</em></h2>
+    <div class="sec-head reveal">
+      <div class="kicker">
+        <div class="row"><span class="sticker st-purple" style="transform:rotate(-2deg)">Trois</span><span class="sticker st-red" style="transform:rotate(2deg)">offres</span></div>
+        <div class="row"><span class="sticker st-pink" style="transform:rotate(-1deg)">zéro surprise</span></div>
       </div>
-      <div>
-        <p class="pricing__head-desc">Chaque formule est livrée en <strong>72H chrono</strong>, clé en main. Pas de surprise, pas de jargon — juste votre site en ligne et des clients qui vous trouvent.</p>
-        <div style="margin-top:20px;display:flex;align-items:center;gap:10px;font-family:var(--font-mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.14em;color:var(--muted);">
-          <span class="live-dot" style="color:var(--teal)"></span>TVA non applicable · Art. 293B CGI
-        </div>
+      <p class="sec-head__sub">Prix affichés, livraison en 72H, paiement sécurisé. Vous savez toujours où vous en êtes.</p>
+    </div>
+    <div class="pricing">
+      <div class="formula reveal">
+        <div class="formula__name">Essentiel</div>
+        <p class="formula__desc">Pour exister en ligne et être trouvable sur Google, en quelques heures.</p>
+        <div class="formula__price"><strong>290</strong><small>€</small><span class="from">TVA non applicable</span></div>
+        <ul class="formula__features"><li>1 page complète & soignée</li><li>Coordonnées mises en avant</li><li>Google Maps intégrée</li><li>100% responsive mobile</li><li>SEO de base inclus</li></ul>
+        <a href="contact.html" class="formula__cta">Choisir l'Essentiel →</a>
+      </div>
+      <div class="formula formula--star reveal reveal-d2">
+        <div class="formula__badge">★ Le plus choisi</div>
+        <div class="formula__name">Pro</div>
+        <p class="formula__desc">Une présence pro complète, avec galerie photos et prise de contact intégrée.</p>
+        <div class="formula__price"><strong>590</strong><small>€</small><span class="from">TVA non applicable</span></div>
+        <ul class="formula__features"><li>4 à 5 pages</li><li>Galerie photos & avis</li><li>Formulaire de contact</li><li>Google Maps + SEO</li><li>Livré en 72H chrono</li></ul>
+        <a href="contact.html" class="formula__cta">Choisir le Pro →</a>
+      </div>
+      <div class="formula reveal reveal-d3">
+        <div class="formula__name">Pro+</div>
+        <p class="formula__desc">Tout ce qu'inclut le Pro, plus un blog ou une boutique simple en ligne.</p>
+        <div class="formula__price"><strong>890</strong><small>€</small><span class="from">3× sans frais</span></div>
+        <ul class="formula__features"><li>Tout ce qu'inclut le Pro</li><li>Blog ou e-shop simple</li><li>Paiement en 3× sans frais</li><li>Accompagnement renforcé</li></ul>
+        <a href="contact.html" class="formula__cta">Choisir le Pro+ →</a>
       </div>
     </div>
-    <div class="pricing reveal reveal-d2">
+    <p class="pricing__foot reveal">+ Option <span class="pill">Maintenance · 29€/mois</span> — hébergement géré & mises à jour</p>
+  </div>
+</section>
 
-      <div class="pcard pcard--side">
-        <img src="images/formule-essentiel.png" alt="Essentiel" class="pcard__photo" />
-        <div class="pcard__name">Essentiel</div>
-        <p class="pcard__desc">Pour exister en ligne et être trouvable sur Google, rapidement.</p>
-        <div class="pcard__price"><strong>290</strong><small>€</small><span class="from">TVA non app.</span></div>
-        <ul class="pcard__features">
-          <li>1 page complète &amp; soignée</li><li>Coordonnées mises en avant</li><li>Google Maps intégrée</li><li>100% responsive mobile</li><li>SEO de base inclus</li><li>🧘 Mode Zen disponible</li>
-        </ul>
-        <a href="contact.html" class="pcard__cta">Choisir l'Essentiel →</a>
+<section class="section">
+  <div class="container">
+    <div class="sec-head reveal">
+      <div class="kicker">
+        <div class="row"><span class="sticker st-red" style="transform:rotate(-2deg)">Trois étapes</span></div>
+        <div class="row"><span class="sticker st-blue" style="transform:rotate(1.5deg)">pas une de plus</span></div>
       </div>
-
-      <div class="pcard pcard--hero">
-        <div class="pcard__badge"><div class="label-badge" style="background:var(--ink);color:var(--teal);border:2px solid var(--ink);font-size:.65rem;">Le + choisi ✦</div></div>
-        <img src="images/formule-pro.png" alt="Formule Pro" class="pcard__photo" />
-        <div class="pcard__name">Pro</div>
-        <p class="pcard__desc">Une présence pro complète, galerie photos et formulaire intégré.</p>
-        <div class="pcard__price"><strong>590</strong><small>€</small><span class="from">TVA non app.</span></div>
-        <ul class="pcard__features">
-          <li>4 à 5 pages</li><li>Galerie photos &amp; avis</li><li>Formulaire de contact</li><li>Google Maps + SEO</li><li>Livré en 72H chrono</li><li>📸 Option séance photo dispo</li><li>🧘 Mode Zen recommandé</li>
-        </ul>
-        <a href="contact.html" class="pcard__cta">Choisir le Pro →</a>
-      </div>
-
-      <div class="pcard pcard--side">
-        <img src="images/formule-pro-plus.png" alt="Formule Pro+" class="pcard__photo" />
-        <div class="pcard__name">Pro+</div>
-        <p class="pcard__desc">Tout ce qu'inclut le Pro, plus blog ou boutique (jusqu'à 20 produits).</p>
-        <div class="pcard__price"><strong>890</strong><small>€</small><span class="from">3× sans frais</span></div>
-        <ul class="pcard__features">
-          <li>Tout ce qu'inclut le Pro</li><li>Blog ou e-shop · max 20 produits</li><li>Paiement 3× sans frais</li><li>📸 Option séance photo dispo</li><li>🧘 Mode Zen recommandé</li>
-        </ul>
-        <a href="contact.html" class="pcard__cta">Choisir le Pro+ →</a>
-      </div>
-
+      <p class="sec-head__sub">Pas de jargon, pas de surprises. Un process clair du début à la fin.</p>
     </div>
-
-    <!-- Options & add-ons -->
-    <div class="pricing__options reveal">
-      <div class="pricing__opt">
-        <span class="pricing__opt-icon">🧘</span>
-        <div>
-          <div class="pricing__opt-label">Mode Zen</div>
-          <div class="pricing__opt-sub">Hébergement · mises à jour · tranquillité</div>
-        </div>
-        <div class="pricing__opt-price">29€<span style="font-size:.65rem;font-weight:500;opacity:.6">/mois</span></div>
-      </div>
-      <div class="pricing__opt">
-        <span class="pricing__opt-icon">⚡</span>
-        <div>
-          <div class="pricing__opt-label">Livraison Urgente</div>
-          <div class="pricing__opt-sub">Site en ligne en 24H chrono</div>
-        </div>
-        <div class="pricing__opt-price">+50€</div>
-      </div>
-      <div class="pricing__opt">
-        <span class="pricing__opt-icon">📸</span>
-        <div>
-          <div class="pricing__opt-label">Séance Photo</div>
-          <div class="pricing__opt-sub">Jusqu'à 30 km autour de Souillac</div>
-        </div>
-        <div class="pricing__opt-price">150€</div>
-      </div>
+    <div class="steps">
+      <div class="step reveal"><div class="step__num">01</div><h3>On échange 20 min.</h3><p>Un appel, un message — peu importe. On parle de votre activité, de vos clients, de ce que vous voulez vraiment.</p><span class="tag">Gratuit · Sans engagement</span></div>
+      <div class="step reveal reveal-d2"><div class="step__num">02</div><h3>Vous m'envoyez vos éléments.</h3><p>Textes, photos, logo, infos pratiques. Je vous guide avec un questionnaire simple — du concret, pas de technique.</p><span class="tag">Questionnaire guidé</span></div>
+      <div class="step reveal reveal-d3"><div class="step__num">03</div><h3>72H plus tard : en ligne.</h3><p>Dès réception, le chrono démarre. Vous recevez un lien, on ajuste, c'est parti. Vous payez quand vous êtes content(e).</p><span class="tag">72H chrono</span></div>
     </div>
   </div>
 </section>
 
-<!-- Wave cream -->
-<div class="wave wave-to-cream" style="background:var(--ink);">
-  <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,45 C360,0 720,80 1080,30 C1260,5 1380,55 1440,35 L1440,80 L0,80 Z" fill="#F5F1EA"/></svg>
-</div>
-
-<!-- ══ PROCESS — cream ══ -->
-<section class="process" id="process">
-  <div class="container">
-    <div class="process__head reveal">
-      <h2 class="process__title">Trois étapes.<br>Pas <em>une de plus.</em></h2>
-    </div>
-    <div class="process__grid">
-      <div class="process__step reveal">
-        <div class="step-num">01</div>
-        <h3>On échange<br>20 minutes.</h3>
-        <p>Un appel, un café, un message. On parle de votre activité, sans script de vente. Gratuit, sans engagement.</p>
-        <div class="step-footer">Gratuit · Sans engagement</div>
-      </div>
-      <div class="process__step reveal reveal-d2">
-        <div class="step-num">02</div>
-        <h3>Vous m'envoyez<br>vos éléments.</h3>
-        <p>Textes, photos, logo. Je vous guide avec un questionnaire simple — pas de jargon, 30 min max.</p>
-        <div class="step-footer">Questionnaire guidé</div>
-      </div>
-      <div class="process__step reveal reveal-d3">
-        <div class="step-num">03</div>
-        <h3>72H plus tard,<br>en ligne.</h3>
-        <p>Votre site est en ligne. Vous payez le solde quand vous êtes satisfait(e). Pas de surprise.</p>
-        <div class="step-footer">72H chrono · 50% à la livraison</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Wave ink -->
-<div class="wave wave-to-ink" style="background:var(--cream);">
-  <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,40 C480,0 960,80 1440,30 L1440,80 L0,80 Z"/></svg>
-</div>
-
-<!-- ══ STATS ══ -->
-<section class="stats-band">
+<section class="section section--purple">
   <div class="container">
     <div class="stats reveal">
-      <div class="stat">
-        <div class="stat__num" data-count="72" data-suffix="H">72<span>H</span></div>
-        <div class="stat__label">Délai de livraison garanti</div>
-      </div>
-      <div class="stat">
-        <div class="stat__num" data-count="100" data-suffix="%">100<span>%</span></div>
-        <div class="stat__label">Sites responsive mobile</div>
-      </div>
-      <div class="stat">
-        <div class="stat__num" data-count="290" data-suffix="€" data-prefix="dès"><em>dès</em> 290<span>€</span></div>
-        <div class="stat__label">Pour votre site internet</div>
-      </div>
-      <div class="stat">
-        <div class="stat__num" data-count="24" data-suffix="H">24<span>H</span></div>
-        <div class="stat__label">Réponse à vos messages</div>
-      </div>
+      <div><div class="stat__num" data-count="72" data-suffix="H">0H</div><div class="stat__label">Délai de livraison garanti</div></div>
+      <div><div class="stat__num" data-count="100" data-suffix="%">0%</div><div class="stat__label">Sites responsive mobile</div></div>
+      <div><div class="stat__num" data-count="290" data-suffix="€">0€</div><div class="stat__label">À partir de, pour votre site</div></div>
+      <div><div class="stat__num" data-count="24" data-suffix="H">0H</div><div class="stat__label">Réponse à vos messages</div></div>
     </div>
   </div>
 </section>
 
-<!-- ══ WHY ══ -->
-<section class="why" id="why">
+<section class="section">
   <div class="container">
-    <div class="why__grid">
-      <div class="why__frame-col reveal">
-        <div class="why__frame">
-          <img src="images/equipe.webp" alt="Barbara" />
+    <div class="about__inner">
+      <div class="about__art reveal">
+        <div class="blob bl-lime"></div><div class="blob bl-blue"></div>
+        <div class="about__photo"><img src="images/client.png" alt="Barbara — Studio Boost 46" /></div>
+        <div class="about__sig">Barbara → Souillac</div>
+      </div>
+      <div class="about__content reveal reveal-d2">
+        <div class="kicker" style="font-size:clamp(1.8rem,4vw,3rem);margin-bottom:24px">
+          <div class="row"><span class="sticker st-pink" style="transform:rotate(-2deg)">Une personne</span></div>
+          <div class="row"><span class="sticker st-purple" style="transform:rotate(1.5deg)">pas une agence</span></div>
         </div>
-        <div class="why__frame-label">
-          <div class="label-badge label-badge--teal" style="transform:rotate(0)"><span class="live-dot" style="color:var(--ink);"></span>Studio · Souillac 46</div>
+        <p class="about__lead">Je ne suis pas une agence à 15 commerciaux et 4 mois de délai. Je suis <strong>Barbara</strong>, designeuse web indépendante basée à Souillac (46). Je travaille avec vous, directement — et c'est tout ce qu'il faut.</p>
+        <div class="points">
+          <div class="point"><span class="point__n">1</span><div><h4>72H, c'est ma promesse.</h4><p>Dès réception de vos éléments, votre site est en ligne en 72 heures. Chrono.</p></div></div>
+          <div class="point"><span class="point__n">2</span><div><h4>Ancrée dans le Lot.</h4><p>Je connais votre territoire, vos clients, votre réalité. On peut se voir en vrai.</p></div></div>
+          <div class="point"><span class="point__n">3</span><div><h4>Zéro jargon.</h4><p>Je vous explique tout simplement. Vous savez exactement ce que vous payez.</p></div></div>
+          <div class="point"><span class="point__n">4</span><div><h4>50/50, c'est tout.</h4><p>50% à la commande, 50% à la livraison. Pas de frais cachés.</p></div></div>
         </div>
       </div>
-      <div class="reveal reveal-d2">
-        <p class="why__pull">Pas une agence. Pas un template. Juste <strong>Barbara</strong>, qui construit votre site comme si c'était le sien.</p>
-        <h2>Une personne.<br>Pas une <em>agence.</em></h2>
-        <p class="why__lead">Je suis <strong>Barbara</strong>, designeuse web indépendante à Souillac (46). Directement avec vous, sans intermédiaire — et c'est tout ce qu'il faut.</p>
-        <div class="why__points">
-          <div class="why__point"><div class="why__point__num">/01</div><div><h4>72H, c'est ma promesse.</h4><p>Votre site en ligne en 72 heures. Chrono.</p></div><div class="why__point__arr">→</div></div>
-          <div class="why__point"><div class="why__point__num">/02</div><div><h4>Ancrée dans le Lot.</h4><p>Je connais votre territoire, vos clients.</p></div><div class="why__point__arr">→</div></div>
-          <div class="why__point"><div class="why__point__num">/03</div><div><h4>Zéro jargon.</h4><p>Simplement, clairement. Vous gardez la main.</p></div><div class="why__point__arr">→</div></div>
-          <div class="why__point"><div class="why__point__num">/04</div><div><h4>50/50, c'est tout.</h4><p>50% à la commande, 50% à la livraison.</p></div><div class="why__point__arr">→</div></div>
-        </div>
-        <a href="contact.html" class="btn btn--teal btn--lg">Discutons de votre projet →</a>
-      </div>
     </div>
   </div>
 </section>
 
-<!-- Wave cream -->
-<div class="wave wave-to-cream" style="background:var(--ink);">
-  <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,20 C360,80 720,10 1080,55 C1260,80 1380,20 1440,40 L1440,80 L0,80 Z" fill="#F5F1EA"/></svg>
-</div>
-
-<!-- ══ TEMOS — cream ══ -->
-<section class="temo" id="avis">
+<section class="temo section--sky">
   <div class="container">
-    <div class="temo__head reveal">
-      <h2 class="temo__title">Avis vérifiés<br><em>Google ★★★★★</em></h2>
-      <div class="temo__google-badge">
-        <img src="images/google.webp" alt="Google Reviews" />
-      </div>
-    </div>
-    <div class="temo__grid">
-      <div class="temo__card reveal"><div class="temo__stars">★★★★★</div><p class="temo__text">« Barbara est très professionnelle, à l'écoute et force de propositions. Elle a su capter l'essence de ma personnalité et la mettre en lumière. Je recommande chaudement ! »</p><div class="temo__author"><div class="temo__avatar">AH</div><div class="temo__author-info"><strong>Angel Heyse</strong><span>Local Guide · Fév. 2025</span></div></div></div>
-      <div class="temo__card reveal reveal-d2"><div class="temo__stars">★★★★★</div><p class="temo__text">« Qualité du travail excellente. Design original, couleurs harmonieuses, rapidité d'exécution = totale satisfaction. »</p><div class="temo__author"><div class="temo__avatar">ML</div><div class="temo__author-info"><strong>Monique Leymarie</strong><span>Cliente · Fév. 2025</span></div></div></div>
-      <div class="temo__card reveal reveal-d3"><div class="temo__stars">★★★★★</div><p class="temo__text">« Barbara est une professionnelle exceptionnelle, toujours à l'écoute et prête à aider. Je recommande vivement pour son expertise et son dévouement. »</p><div class="temo__author"><div class="temo__avatar">MC</div><div class="temo__author-info"><strong>Marie-Thérèse Coelho</strong><span>Cliente · Juil. 2024</span></div></div></div>
-    </div>
+    <div class="temo__stars reveal">★★★★★</div>
+    <p class="temo__quote reveal">Barbara a livré mon site en 3 jours, exactement comme promis. Simple, beau, et <em>déjà des appels</em> de nouveaux clients la semaine suivante !</p>
+    <div class="temo__author reveal reveal-d2"><div class="temo__avatar">J</div><div class="who"><strong>Jean-Paul M.</strong><span>Plombier-chauffagiste · Souillac (46)</span></div></div>
   </div>
 </section>
 
-<!-- ══ FAQ — cream ══ -->
-<section class="faq" id="faq">
+<section class="cta">
   <div class="container">
-    <div class="faq__head reveal">
-      <h2 class="faq__title">Questions <em>fréquentes</em></h2>
-    </div>
-    <div class="faq__list reveal">
-
-      <div class="faq__item">
-        <button class="faq__q">Je n'ai pas de photos professionnelles.<span class="faq__q-icon">+</span></button>
-        <div class="faq__a"><p>Pas de panique — c'est justement là que j'interviens. Je me déplace faire une <strong>séance photo professionnelle</strong> dans un rayon de <strong>30 km autour de Souillac</strong>. Des photos qui vous ressemblent, qui rassurent vos clients et qui vendent. <strong>150€</strong>.<br><br>De vraies photos pour votre vraie activité.</p><span class="faq__tag">📸 Option séance photo · 150€ · jusqu'à 30 km</span></div>
-      </div>
-
-      <div class="faq__item">
-        <button class="faq__q">Est-ce que je peux modifier mon site moi-même ?<span class="faq__q-icon">+</span></button>
-        <div class="faq__a"><p>Non — votre site est codé sur mesure, et seul un professionnel peut le modifier proprement. Mais c'est pour ça que j'ai créé le <strong>Mode Zen</strong> : pour <strong>moins du prix d'un café par jour (29€/mois)</strong>, je m'occupe de toutes vos mises à jour, corrections et petites évolutions. Vous n'avez qu'à m'envoyer un message.</p><span class="faq__tag">🧘 Mode Zen · 29€/mois · Tranquillité garantie</span></div>
-      </div>
-
-      <div class="faq__item">
-        <button class="faq__q">Vraiment 72H ? C'est garanti ?<span class="faq__q-icon">+</span></button>
-        <div class="faq__a"><p>Oui — c'est ma promesse depuis le premier jour. <strong>72 heures</strong> après que vous m'ayez envoyé vos éléments (textes, logo, photos), votre site est en ligne. Vous ne payez le solde que quand vous êtes satisfait(e). Pas de mauvaise surprise. Si vous êtes très pressé(e), l'option <strong>Livraison Urgente 24H</strong> est disponible en supplément (+50€).</p><span class="faq__tag">⚡ Urgent ? +50€ pour 24H chrono</span></div>
-      </div>
-
-      <div class="faq__item">
-        <button class="faq__q">Mon site sera-t-il visible sur Google ?<span class="faq__q-icon">+</span></button>
-        <div class="faq__a"><p>Chaque site est livré avec un <strong>SEO de base soigné</strong> : balises titre, descriptions, structure sémantique, Google Maps intégré, et site 100% rapide sur mobile. Vous apparaissez dans les recherches locales dès la mise en ligne. Pour aller plus loin, le Mode Zen inclut un suivi régulier.</p></div>
-      </div>
-
+    <span class="cta__small reveal">Prêt(e) à vous lancer ?</span>
+    <h2 class="reveal reveal-d2">Il ne manque<br/><span class="hl">plus que vous.</span></h2>
+    <div class="cta__actions reveal reveal-d3">
+      <a href="contact.html" class="btn btn--pink btn--lg" data-magnetic>Démarrer mon projet <span class="arrow">→</span></a>
+      <a href="services.html" class="btn btn--cream btn--lg">Voir les formules</a>
     </div>
   </div>
 </section>
 
-<!-- Wave teal -->
-<div class="wave wave-to-teal" style="background:var(--cream);">
-  <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,55 C480,0 960,80 1440,28 L1440,80 L0,80 Z" fill="#1ABFBE"/></svg>
-</div>
-
-<!-- ══ CTA — full teal, Feastie max ══ -->
-<section class="cta-banner">
-  <div class="container">
-    <div class="cta-banner__inner reveal">
-      <div class="cta-banner__eyebrow"><div class="label-badge" style="background:rgba(10,14,15,.15);color:var(--ink);border:2.5px solid rgba(10,14,15,.25);">Prêt à démarrer ?</div></div>
-      <h2>
-        <span class="cta-main">Votre site en<br></span>
-        <em>72H chrono.</em>
-      </h2>
-      <div class="cta-banner__actions">
-        <a href="contact.html" class="btn btn--cream btn--lg" data-magnetic="">Je veux mon site →</a>
-        <a href="services.html" class="btn btn--ink btn--lg">Voir les formules</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══ FOOTER ══ -->
 <footer class="footer">
   <div class="container">
     <div class="footer__grid">
-      <div class="footer__brand"><div class="logo"><img src="images/logo.webp" alt="" onerror="this.style.display='none'"/> Studio Boost <strong>46</strong></div><p>Studio web indépendant à Souillac (Lot). Sites clés en main pour artisans et entrepreneurs. Livraison 72H.</p></div>
-      <div class="footer__col"><h5>Navigation</h5><ul><li><a href="index.html">Accueil</a></li><li><a href="services.html">Services</a></li><li><a href="projets.html">Projets</a></li><li><a href="contact.html">Contact</a></li></ul></div>
-      <div class="footer__col"><h5>Services</h5><ul><li><a href="#">Essentiel</a></li><li><a href="#">Pro</a></li><li><a href="#">Pro+</a></li><li><a href="#">Mode Zen</a></li></ul></div>
-      <div class="footer__col"><h5>Infos</h5><ul><li><a href="contact.html">Me contacter</a></li><li><a href="mentions-legales.html">Mentions légales</a></li></ul></div>
+      <div class="footer__brand">
+        <div class="logo"><img src="images/logo.png" alt="" />Studio Boost <strong>46</strong></div>
+        <p>Sites web simples, efficaces et sans blabla. Pour les artisans, commerçants et entrepreneurs du Lot (46) et alentours.</p>
+      </div>
+      <div class="footer__col"><h5>Navigation</h5><ul><li><a href="index.html">Accueil</a></li><li><a href="services.html">Services & Tarifs</a></li><li><a href="projets.html">Projets</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer__col"><h5>Contact</h5><ul><li>Souillac (46200), Lot</li><li>Réponse en 24H</li><li>Livraison en 72H</li></ul></div>
+      <div class="footer__col"><h5>Social</h5><ul><li><a href="#">Instagram ↗</a></li><li><a href="#">LinkedIn ↗</a></li><li><a href="#">Facebook ↗</a></li></ul></div>
     </div>
-    <div class="footer__bottom"><span>© 2026 Studio Boost 46</span><span>Fait avec ♥ dans le Lot · FR</span></div>
-    <div class="footer__giant">Studio Boost <em>46.</em></div>
   </div>
+  <div class="footer__giant">STUDIO BOOST 46</div>
+  <div class="container"><div class="footer__bottom"><span>© 2026 Studio Boost 46</span><span>Souillac (46200) · Lot · France</span><span>Designé & développé en 72H</span></div></div>
 </footer>
 
-<script>
-const cursor=document.getElementById('cursor');
-if(cursor){let cx=0,cy=0,tx=0,ty=0;window.addEventListener('mousemove',e=>{tx=e.clientX;ty=e.clientY;});(function l(){cx+=(tx-cx)*.18;cy+=(ty-cy)*.18;cursor.style.transform=`translate(${cx-6}px,${cy-6}px)`;requestAnimationFrame(l);})();document.querySelectorAll('a,button,[data-magnetic]').forEach(el=>{el.addEventListener('mouseenter',()=>cursor.classList.add('is-hover'));el.addEventListener('mouseleave',()=>cursor.classList.remove('is-hover'));});}
-document.querySelectorAll('[data-magnetic]').forEach(el=>{el.addEventListener('mousemove',e=>{const r=el.getBoundingClientRect();el.style.transform=`translate(${(e.clientX-r.left-r.width/2)*.22}px,${(e.clientY-r.top-r.height/2)*.32}px)`;});el.addEventListener('mouseleave',()=>el.style.transform='');});
-const nav=document.getElementById('nav');window.addEventListener('scroll',()=>nav?.classList.toggle('is-scrolled',scrollY>40),{passive:true});
-const burger=document.querySelector('.nav__burger'),mob=document.querySelector('.nav__mobile');burger?.addEventListener('click',()=>{burger.classList.toggle('open');mob?.classList.toggle('open');document.body.style.overflow=burger.classList.contains('open')?'hidden':'';});
-const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:.1,rootMargin:'0px 0px -6% 0px'});
-document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
-const cio=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;const el=e.target,target=+el.dataset.count,suffix=el.dataset.suffix||'',dur=1400,start=performance.now(),hasEm=el.innerHTML.includes('<em>');(function step(t){const p=Math.min((t-start)/dur,1),v=Math.floor(target*(1-Math.pow(1-p,3)));el.innerHTML=hasEm?`<em>dès</em> ${v}<span>${suffix}</span>`:`${v}<span>${suffix}</span>`;if(p<1)requestAnimationFrame(step);else cio.unobserve(el);})(start);}),{threshold:.5});
-document.querySelectorAll('.stat__num[data-count]').forEach(c=>cio.observe(c));
-/* FAQ accordion */
-document.querySelectorAll('.faq__item').forEach(item=>{
-  item.querySelector('.faq__q')?.addEventListener('click',()=>{
-    const open=item.classList.contains('open');
-    document.querySelectorAll('.faq__item').forEach(i=>i.classList.remove('open'));
-    if(!open)item.classList.add('open');
-  });
-});
-</script>
+<script src="script.js"></script>
 </body>
 </html>

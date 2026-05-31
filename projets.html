@@ -1,271 +1,130 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YHTVVJS57M"></script>
-  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YHTVVJS57M');</script>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Découvrez les réalisations de Studio Boost 46 : sites internet pour artisans, commerçants, restaurants, thérapeutes et indépendants du Lot et alentours." />
-  <title>Projets — Studio Boost 46</title>
-  <link rel="stylesheet" href="feastie.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter+Tight:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Projets — Studio Boost 46</title>
+<meta name="description" content="Réalisations Studio Boost 46 : sites pour artisans, commerçants, restaurants, thérapeutes et indépendants du Lot et alentours." />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+<link rel="stylesheet" href="style.css" />
+<style>
+.t-boulangerie{background:var(--yellow)}.t-plombier{background:var(--sky)}.t-kine{background:var(--lime)}
+.t-resto{background:var(--red)}.t-photo{background:var(--pink)}.t-boutique{background:var(--pink-soft)}
+.t-elec{background:var(--orange)}.t-coach{background:var(--lime-deep)}.t-menuisier{background:var(--cream-2)}
+</style>
 </head>
-<body>
-
+<body data-screen-label="Projets">
 <div class="cursor" id="cursor"></div>
 
-<!-- NAV -->
-<nav class="nav is-scrolled" id="nav">
+<div class="topbar"><div class="topbar__track">
+  <span>40+ SITES LIVRÉS <i class="spark">✦</i> ARTISANS <i class="spark">✦</i> COMMERÇANTS <i class="spark">✦</i> RESTAURATEURS <i class="spark">✦</i> THÉRAPEUTES <i class="spark">✦</i> CRÉATIFS <i class="spark">✦</i></span>
+  <span aria-hidden="true">40+ SITES LIVRÉS <i class="spark">✦</i> ARTISANS <i class="spark">✦</i> COMMERÇANTS <i class="spark">✦</i> RESTAURATEURS <i class="spark">✦</i> THÉRAPEUTES <i class="spark">✦</i> CRÉATIFS <i class="spark">✦</i></span>
+</div></div>
+
+<nav class="nav" id="nav">
   <div class="container nav__inner">
-    <a href="index.html" class="nav__logo">
-      <img src="images/logo.webp" alt="Studio Boost 46" />
-      Studio Boost <strong>46</strong>
-    </a>
-    <ul class="nav__links">
-      <li><a href="index.html">Accueil</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="projets.html" class="active">Projets</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <a href="contact.html" class="nav__cta">Démarrer →</a>
-    <button class="nav__burger" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
+    <a href="index.html" class="nav__logo"><img src="images/logo.png" alt="" />Studio Boost <strong>46</strong></a>
+    <div class="nav__meta"><span>Souillac · 46</span><span>Réponse 24H</span></div>
+    <div class="nav__links">
+      <a href="index.html">Accueil</a>
+      <a href="services.html">Services</a>
+      <a href="projets.html" class="active">Projets</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <a href="contact.html" class="nav__cta" data-magnetic>Démarrer →</a>
+    <button class="nav__burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
 </nav>
-<nav class="nav__mobile">
+<div class="mobile-menu" id="mobileMenu">
   <a href="index.html">Accueil</a>
   <a href="services.html">Services</a>
   <a href="projets.html" class="active">Projets</a>
   <a href="contact.html">Contact</a>
-  <a href="contact.html" class="btn btn--teal">Démarrer mon projet →</a>
-</nav>
+  <div class="mm-cta"><a href="contact.html" class="btn btn--pink">Démarrer mon projet →</a></div>
+  <div class="mm-foot"><span>Souillac (46200) · Lot</span><span>Réponse en 24H · Livraison 72H</span></div>
+</div>
 
-<!-- PAGE HERO -->
 <section class="page-hero">
-  <div class="page-hero__inner">
-    <span class="page-hero__tag">Réalisations</span>
-    <h1>Des sites qui<br><em>font la différence.</em></h1>
-    <p>Artisans, commerçants, thérapeutes, restaurateurs… Voici ce que je crée pour des professionnels comme vous.</p>
-  </div>
-</section>
-
-<!-- Wave ink (stays dark) -->
-<div class="wave wave-to-ink" style="background:var(--ink);">
-  <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,30 C240,80 480,0 720,40 C960,80 1200,10 1440,45 L1440,80 L0,80 Z"/></svg>
-</div>
-
-<!-- PROJETS RÉALISÉS -->
-<section class="section projets-section">
+  <div class="page-hero__blob" style="width:240px;height:240px;background:var(--sky);right:-50px;top:10px"></div>
+  <div class="page-hero__blob" style="width:180px;height:180px;background:var(--yellow);left:-20px;top:80px"></div>
   <div class="container">
-    <div class="section__header reveal">
-      <div class="section__eyebrow">Réalisations</div>
-      <h2 class="section__title">Sites livrés,<br>clients <em>satisfaits.</em></h2>
+    <div class="kicker reveal">
+      <div class="row"><span class="sticker st-blue" style="transform:rotate(-2deg)">Des sites</span></div>
+      <div class="row"><span class="sticker st-pink" style="transform:rotate(1.5deg)">qui claquent</span></div>
     </div>
-
-    <div class="projet-grid">
-      <a href="https://boxfitgym-souillac.fr" target="_blank" rel="noopener" class="projet-card reveal">
-        <div class="projet-card__browser">
-          <div class="projet-card__browser-bar">
-            <div class="projet-card__browser-dots">
-              <span></span><span></span><span></span>
-            </div>
-            <div class="projet-card__browser-url">boxfitgym-souillac.fr</div>
-          </div>
-          <div class="projet-card__browser-screen">
-            <img src="images/boxfitgym-hero.jpg" alt="Box Fit Gym — site internet" loading="lazy" />
-          </div>
-        </div>
-        <div class="projet-card__body">
-          <div class="projet-card__tags">
-            <span class="projet-card__tag">Association sportive</span>
-            <span class="projet-card__tag">Souillac · Lot</span>
-            <span class="projet-card__tag" style="background:var(--teal);color:var(--ink);font-weight:700;">Formule Pro · 590€</span>
-          </div>
-          <h3 class="projet-card__title">Box Fit Gym</h3>
-          <p class="projet-card__desc">Site multi-pages pour une association de sport de Souillac — présentation des disciplines, des entraîneurs, planning et contact. Design moderne sur fond sombre.</p>
-          <span class="projet-card__link">Voir le site → boxfitgym-souillac.fr</span>
-        </div>
-      </a>
-    </div>
-
-    <!-- EN COURS -->
-    <div class="projets-coming reveal reveal-d2">
-      <span class="projets-coming__icon">🚧</span>
-      <h2>D'autres sites arrivent<br><em>bientôt.</em></h2>
-      <p>De nouveaux projets sont en cours de finalisation. Revenez bientôt — ou mieux, faites partie du prochain lot.</p>
-      <div class="projets-wip">
-        <div class="projets-wip__card">
-          <div class="icon">🔧</div>
-          <strong>Artisan</strong>
-          <span>Site en cours de réalisation</span>
-          <div class="projets-wip__bar"></div>
-        </div>
-        <div class="projets-wip__card">
-          <div class="icon">🍽️</div>
-          <strong>Restauration</strong>
-          <span>Site en cours de réalisation</span>
-          <div class="projets-wip__bar" style="width:40px"></div>
-        </div>
-        <div class="projets-wip__card">
-          <div class="icon">💆</div>
-          <strong>Bien-être</strong>
-          <span>Site en cours de réalisation</span>
-          <div class="projets-wip__bar" style="width:80px"></div>
-        </div>
-      </div>
-      <a href="contact.html" class="btn btn--teal btn--lg">Votre site sera le prochain →</a>
-    </div>
+    <p class="reveal reveal-d2">Artisans, commerçants, thérapeutes, restaurateurs… Voici un aperçu de ce que je crée pour des pros comme vous.</p>
   </div>
 </section>
 
-<!-- MARQUEE -->
-<div class="marquee marquee--small">
-  <div class="marquee__track">
-    <span>ARTISANS <em>·</em> COMMERÇANTS <em>·</em> THÉRAPEUTES <em>·</em> RESTAURATEURS <em>·</em> COACHES <em>·</em> INDÉPENDANTS <em>·</em> PROFESSIONS LIBÉRALES <em>·</em></span>
-    <span aria-hidden="true">ARTISANS <em>·</em> COMMERÇANTS <em>·</em> THÉRAPEUTES <em>·</em> RESTAURATEURS <em>·</em> COACHES <em>·</em> INDÉPENDANTS <em>·</em> PROFESSIONS LIBÉRALES <em>·</em></span>
-  </div>
-</div>
-
-<!-- Wave cream -->
-<div class="wave wave-to-cream" style="background:var(--ink);">
-  <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,45 C360,0 720,80 1080,30 C1260,5 1380,55 1440,35 L1440,80 L0,80 Z" fill="#F5F1EA"/></svg>
-</div>
-
-<!-- TÉMOIGNAGES -->
-<section class="temo" id="avis">
+<section class="section" style="padding-top:50px">
   <div class="container">
-    <div class="section__header reveal">
-      <div class="section__eyebrow">Avis vérifiés Google</div>
-      <h2 class="section__title">Ce que disent<br><em>mes clients.</em></h2>
+    <div class="filter-bar reveal">
+      <button class="filter-btn active" data-filter="all">Tous</button>
+      <button class="filter-btn" data-filter="artisan">Artisans</button>
+      <button class="filter-btn" data-filter="commerce">Commerces</button>
+      <button class="filter-btn" data-filter="service">Services & Santé</button>
+      <button class="filter-btn" data-filter="restaurant">Restauration</button>
     </div>
-    <div class="temo__grid">
-
-      <div class="temo__card reveal">
-        <div class="temo__stars">★★★★★</div>
-        <p class="temo__text">J'ai fait appel à Barbara pour mon profil LinkedIn, notamment mon identité visuelle. Son pep's m'a tout de suite séduite et je n'ai pas été déçue — elle a su capter l'essence de ma personnalité et la mettre en lumière. Barbara est très professionnelle, à l'écoute et force de propositions. Je recommande chaudement !</p>
-        <div class="temo__author">
-          <div class="temo__avatar">A</div>
-          <div class="temo__author-info"><strong>Angel Heyse</strong><span>Local Guide · février 2025</span></div>
-        </div>
-      </div>
-
-      <div class="temo__card reveal reveal-d2">
-        <div class="temo__stars">★★★★★</div>
-        <p class="temo__text">Après plusieurs réalisations d'affiches, je peux dire que la qualité du travail est excellente. Design original, couleurs harmonieuses, rapidité d'exécution = totale satisfaction.</p>
-        <div class="temo__author">
-          <div class="temo__avatar">M</div>
-          <div class="temo__author-info"><strong>Monique Leymarie</strong><span>Google · février 2025</span></div>
-        </div>
-      </div>
-
-      <div class="temo__card reveal reveal-d3">
-        <div class="temo__stars">★★★★★</div>
-        <p class="temo__text">La formation Canva/ChatGPT et Notion que j'ai suivie me fait gagner un temps fou — en seulement 5 jours j'ai déjà 3 semaines de posts de prêts. Le template Notion est vraiment excellent.</p>
-        <div class="temo__author">
-          <div class="temo__avatar">P</div>
-          <div class="temo__author-info"><strong>Patricia Borderon</strong><span>Local Guide · février 2025</span></div>
-        </div>
-      </div>
-
-      <div class="temo__card reveal">
-        <div class="temo__stars">★★★★★</div>
-        <p class="temo__text">Barbara est une professionnelle exceptionnelle, toujours à l'écoute et prête à aider. Elle a transformé mon profil LinkedIn, lui donnant un aspect beaucoup plus professionnel et attractif. Je recommande vivement Barbara pour son expertise et son dévouement.</p>
-        <div class="temo__author">
-          <div class="temo__avatar">M</div>
-          <div class="temo__author-info"><strong>Marie-Thérèse Coelho</strong><span>Google · il y a un an</span></div>
-        </div>
-      </div>
-
-      <div class="temo__card reveal reveal-d2">
-        <div class="temo__stars">★★★★★</div>
-        <p class="temo__text">J'ai été agréablement surprise par la qualité et la richesse du contenu fourni. Le dossier reçu a largement dépassé mes attentes. C'est un investissement que vous ne regretterez pas !</p>
-        <div class="temo__author">
-          <div class="temo__avatar">S</div>
-          <div class="temo__author-info"><strong>Sandrine Guedra</strong><span>Google · juillet 2024</span></div>
-        </div>
-      </div>
-
-    </div>
-    <div class="temo__footer">
-      <a href="https://www.google.com/search?q=Studio+Boost+46+Souillac" target="_blank" rel="noopener" class="temo__google-btn">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
-        5 avis · Note moyenne 5/5 sur Google
-      </a>
+    <div class="projets-grid">
+      <div class="projet reveal" data-type="commerce"><div class="projet__thumb t-boulangerie"><span class="projet__emoji">🥐</span></div><div class="projet__body"><div class="projet__tags"><span class="projet__tag t-formule">Pro</span><span class="projet__tag t-type">Commerce</span></div><h3>Boulangerie Martin</h3><p>Site vitrine 4 pages avec galerie des créations, horaires et commande spéciale.</p></div></div>
+      <div class="projet reveal reveal-d2" data-type="artisan"><div class="projet__thumb t-plombier"><span class="projet__emoji">🔧</span></div><div class="projet__body"><div class="projet__tags"><span class="projet__tag t-formule">Essentiel</span><span class="projet__tag t-type">Artisan</span></div><h3>Plomberie Duval</h3><p>Page unique avec coordonnées, zone d'intervention, Maps et bouton d'appel direct.</p></div></div>
+      <div class="projet reveal reveal-d3" data-type="service"><div class="projet__thumb t-kine"><span class="projet__emoji">💆</span></div><div class="projet__body"><div class="projet__tags"><span class="projet__tag t-formule">Pro</span><span class="projet__tag t-type">Santé</span></div><h3>Cabinet Leroux</h3><p>Site complet avec présentation des soins, prise de rendez-vous en ligne et accès.</p></div></div>
+      <div class="projet reveal" data-type="restaurant"><div class="projet__thumb t-resto"><span class="projet__emoji">🍽️</span></div><div class="projet__body"><div class="projet__tags"><span class="projet__tag t-formule">Pro+</span><span class="projet__tag t-type">Restaurant</span></div><h3>La Terrasse — Souillac</h3><p>Carte, galerie photos, réservation en ligne, blog actualités & coffrets cadeaux.</p></div></div>
+      <div class="projet reveal reveal-d2" data-type="service"><div class="projet__thumb t-photo"><span class="projet__emoji">📸</span></div><div class="projet__body"><div class="projet__tags"><span class="projet__tag t-formule">Pro+</span><span class="projet__tag t-type">Créatif</span></div><h3>Maxime Fabre Photographe</h3><p>Portfolio avec galeries par thème (mariage, portrait, événement) et devis.</p></div></div>
+      <div class="projet reveal reveal-d3" data-type="commerce"><div class="projet__thumb t-boutique"><span class="projet__emoji">👗</span></div><div class="projet__body"><div class="projet__tags"><span class="projet__tag t-formule">Pro+</span><span class="projet__tag t-type">Commerce</span></div><h3>Boutique Élégance</h3><p>E-commerce simple avec boutique en ligne, nouvelles collections et click & collect.</p></div></div>
+      <div class="projet reveal" data-type="artisan"><div class="projet__thumb t-elec"><span class="projet__emoji">⚡</span></div><div class="projet__body"><div class="projet__tags"><span class="projet__tag t-formule">Pro</span><span class="projet__tag t-type">Artisan</span></div><h3>Élec Quercy</h3><p>Site 5 pages avec galerie de chantiers, zone d'intervention et demande de devis.</p></div></div>
+      <div class="projet reveal reveal-d2" data-type="service"><div class="projet__thumb t-coach"><span class="projet__emoji">🌱</span></div><div class="projet__body"><div class="projet__tags"><span class="projet__tag t-formule">Pro+</span><span class="projet__tag t-type">Service</span></div><h3>Sophie Vitale — Coach</h3><p>Présentation de l'accompagnement, témoignages, blog conseils et RDV découverte.</p></div></div>
+      <div class="projet reveal reveal-d3" data-type="artisan"><div class="projet__thumb t-menuisier"><span class="projet__emoji">🪵</span></div><div class="projet__body"><div class="projet__tags"><span class="projet__tag t-formule">Pro</span><span class="projet__tag t-type">Artisan</span></div><h3>Menuiserie Peyrac</h3><p>Vitrine avec galerie de réalisations sur mesure (cuisines, escaliers, dressings).</p></div></div>
     </div>
   </div>
 </section>
 
-<!-- Wave teal -->
-<div class="wave wave-to-teal" style="background:var(--ink);">
-  <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,55 C480,0 960,80 1440,28 L1440,80 L0,80 Z" fill="#1ABFBE"/></svg>
-</div>
+<div class="ribbon"><div class="ribbon__track">
+  <span>ILS TÉMOIGNENT <span class="dot"></span> <em>★★★★★</em> <span class="dot"></span> DES PROS DU LOT <span class="dot"></span> QUI ONT FRANCHI LE PAS <span class="dot"></span></span>
+  <span aria-hidden="true">ILS TÉMOIGNENT <span class="dot"></span> <em>★★★★★</em> <span class="dot"></span> DES PROS DU LOT <span class="dot"></span> QUI ONT FRANCHI LE PAS <span class="dot"></span></span>
+</div></div>
 
-<!-- CTA -->
-<section class="cta-banner">
+<section class="section section--lime">
   <div class="container">
-    <div class="cta-banner__inner reveal">
-      <div class="cta-banner__eyebrow"><div class="label-badge" style="background:rgba(10,14,15,.15);color:var(--ink);border:2.5px solid rgba(10,14,15,.25);">Et si c'était votre tour ?</div></div>
-      <h2>
-        <span class="cta-main">Votre site pourrait<br></span>
-        <em>être le prochain.</em>
-      </h2>
-      <div class="cta-banner__actions">
-        <a href="contact.html" class="btn btn--cream btn--lg">Démarrer mon projet →</a>
-        <a href="services.html" class="btn btn--ink btn--lg">Voir les tarifs</a>
-      </div>
+    <div class="sec-head sec-head--center reveal">
+      <div class="kicker"><div class="row"><span class="sticker st-purple" style="transform:rotate(-2deg)">Ce que disent</span></div><div class="row"><span class="sticker st-pink" style="transform:rotate(1.5deg)">mes clients</span></div></div>
+      <p class="sec-head__sub">Des entrepreneurs du Lot qui ont franchi le pas et ne le regrettent pas.</p>
+    </div>
+    <div class="temo-grid">
+      <div class="tcard reveal"><div class="stars">★★★★★</div><p>"Barbara a créé mon site en moins de 3 jours, exactement comme promis. Simple, beau, et déjà des appels la semaine suivante. Je recommande les yeux fermés."</p><div class="who"><div class="av" style="background:var(--yellow)">J</div><div><strong>Jean-Paul M.</strong><span>Plombier, Souillac</span></div></div></div>
+      <div class="tcard reveal reveal-d2"><div class="stars">★★★★★</div><p>"Ce que j'ai apprécié : zéro jargon, zéro prise de tête. Elle a compris ce que je voulais du premier coup et le résultat est exactement ce que j'imaginais. Et en 72H !"</p><div class="who"><div class="av" style="background:var(--sky)">S</div><div><strong>Sophie L.</strong><span>Naturopathe, Gourdon (46)</span></div></div></div>
+      <div class="tcard reveal reveal-d3"><div class="stars">★★★★★</div><p>"J'avais peur que ce soit compliqué, que ça prenne des semaines. Finalement super fluide. Le site est pro, moderne, et mes clients le trouvent facilement sur Google."</p><div class="who"><div class="av" style="background:var(--pink)">M</div><div><strong>Marc & Claire D.</strong><span>Chambres d'hôtes, Martel</span></div></div></div>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
+<section class="cta">
+  <div class="container">
+    <span class="cta__small reveal">Et si c'était votre tour ?</span>
+    <h2 class="reveal reveal-d2">Votre site pourrait<br/><span class="hl">être le prochain.</span></h2>
+    <div class="cta__actions reveal reveal-d3">
+      <a href="contact.html" class="btn btn--pink btn--lg" data-magnetic>Démarrer mon projet <span class="arrow">→</span></a>
+      <a href="services.html" class="btn btn--cream btn--lg">Voir les tarifs</a>
+    </div>
+  </div>
+</section>
+
 <footer class="footer">
   <div class="container">
     <div class="footer__grid">
       <div class="footer__brand">
-        <div class="logo"><img src="images/logo.webp" alt="">Studio Boost <strong>46</strong></div>
+        <div class="logo"><img src="images/logo.png" alt="" />Studio Boost <strong>46</strong></div>
         <p>Sites web simples, efficaces et sans blabla. Pour les artisans, commerçants et entrepreneurs du Lot (46) et alentours.</p>
-        <div class="footer__social">
-          <a href="https://www.facebook.com/share/1CuA4sLjBP/?mibextid=wwXIfr" aria-label="Facebook" target="_blank" rel="noopener">f</a>
-        </div>
       </div>
-      <div class="footer__col">
-        <h5>Navigation</h5>
-        <ul>
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="services.html">Services &amp; Tarifs</a></li>
-          <li><a href="projets.html">Projets</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer__col">
-        <h5>Contact</h5>
-        <ul>
-          <li>Souillac (46200), Lot</li>
-          <li>Réponse en 24H</li>
-          <li>Livraison en 72H</li>
-          <li><a href="contact.html">→ Envoyer un message</a></li>
-        </ul>
-      </div>
-      <div class="footer__col">
-        <h5>Légal</h5>
-        <ul>
-          <li><a href="mentions-legales.html">Mentions légales</a></li>
-          <li><a href="mentions-legales.html">RGPD</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer__giant">Studio Boost <em>46.</em></div>
-    <div class="footer__bottom">
-      <span>© 2026 Studio Boost 46</span>
-      <span>Souillac (46200) · Lot · France</span>
-      <span><a href="mentions-legales.html">Mentions légales</a></span>
+      <div class="footer__col"><h5>Navigation</h5><ul><li><a href="index.html">Accueil</a></li><li><a href="services.html">Services & Tarifs</a></li><li><a href="projets.html">Projets</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer__col"><h5>Contact</h5><ul><li>Souillac (46200), Lot</li><li>Réponse en 24H</li><li>Livraison en 72H</li></ul></div>
+      <div class="footer__col"><h5>Social</h5><ul><li><a href="#">Instagram ↗</a></li><li><a href="#">LinkedIn ↗</a></li><li><a href="#">Facebook ↗</a></li></ul></div>
     </div>
   </div>
+  <div class="footer__giant">STUDIO BOOST 46</div>
+  <div class="container"><div class="footer__bottom"><span>© 2026 Studio Boost 46</span><span>Souillac (46200) · Lot · France</span><span>Designé & développé en 72H</span></div></div>
 </footer>
 
-<script src="script.js?v=2"></script>
+<script src="script.js"></script>
 </body>
 </html>
