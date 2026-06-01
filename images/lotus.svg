@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 110" fill="none">
+  <!-- Pétales arrière -->
+  <ellipse cx="60" cy="72" rx="14" ry="30" fill="#c084fc" transform="rotate(-30 60 72)"/>
+  <ellipse cx="60" cy="72" rx="14" ry="30" fill="#c084fc" transform="rotate(30 60 72)"/>
+  <!-- Pétales milieu -->
+  <ellipse cx="60" cy="68" rx="13" ry="28" fill="#f472b6" transform="rotate(-18 60 68)"/>
+  <ellipse cx="60" cy="68" rx="13" ry="28" fill="#f472b6" transform="rotate(18 60 68)"/>
+  <!-- Pétale central -->
+  <ellipse cx="60" cy="60" rx="16" ry="34" fill="#fb7185"/>
+  <!-- Tige -->
+  <path d="M60 94 Q55 100 50 106" stroke="#86efac" stroke-width="3" stroke-linecap="round"/>
+  <path d="M60 94 Q65 100 70 106" stroke="#86efac" stroke-width="3" stroke-linecap="round"/>
+  <path d="M60 94 L60 108" stroke="#4ade80" stroke-width="3" stroke-linecap="round"/>
+  <!-- Feuilles -->
+  <ellipse cx="44" cy="100" rx="12" ry="6" fill="#86efac" transform="rotate(-20 44 100)"/>
+  <ellipse cx="76" cy="100" rx="12" ry="6" fill="#86efac" transform="rotate(20 76 100)"/>
+</svg>
